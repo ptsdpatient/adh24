@@ -86,8 +86,8 @@
 
 	//DNA BG thingy
 	// import Sketch from '$lib/components/DNA/Sketch.svelte';
-	import dna from '$lib/assets/3d-models/dna.glb?url';
-	import { fade } from 'svelte/transition';
+	// import dna from '$lib/assets/3d-models/dna.glb?url';
+	// import { fade } from 'svelte/transition';
 
 	onMount(async () => {
 		const canvas = document.getElementById('dna-bg') ?? document.createElement('canvas');

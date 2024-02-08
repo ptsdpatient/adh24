@@ -75,7 +75,7 @@
 <div
 	
 	id="dna-bg"
-	class="fixed h-screen w-screen -z-50 bg-black opacity-75"
+	class="fixed h-screen w-screen -z-50 bg-red-400 opacity-75"
 />
 <!-- bind:this={heading} -->
 <div class="flex_title !mt-0 pt-20">Advisors</div>
@@ -1519,47 +1519,7 @@
 			</div>
 		</div>
 	</article>
-	<article class="my-cont">
-		<div style:--img={`url(${mrunmai_ingole_photo})`} class="thumb" />
-		<div class="infos">
-			<h2 class="title">Mrunmai Ingole<span class="flag" /></h2>
-			<h3 class="date">Head</h3>
-			<h3 class="seats"><!--status--></h3>
-			<p class="txt"><!-- data--></p>
-			<div class="details">
-				<a
-					rel="external noopener noreferrer nofollow"
-					target="_blank"
-					href="mailto:chetnasalve00@gmail.com"
-				>
-					<iconify-icon
-						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
-						icon="mdi:email-outline"
-					/>
-				</a>
-				<a
-					rel="external noopener noreferrer nofollow"
-					target="_blank"
-					href="https://instagram.com/chetna__salve"
-				>
-					<iconify-icon
-						class="text-3xl lg:text-5xl text-[#FF1C7C] bg-clip-text"
-						icon="mdi:instagram"
-					/>
-				</a>
-				<a
-					rel="external noopener noreferrer nofollow"
-					target="_blank"
-					href="https://www.linkedin.com/in/chetna-salve-2951a8249"
-				>
-					<iconify-icon
-						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
-						icon="mdi:linkedin"
-					/>
-				</a>
-			</div>
-		</div>
-	</article>
+	
 	<article class="my-cont">
 		<div style:--img={`url(${shweta_mane_photo})`} class="thumb" />
 		<div class="infos">
@@ -1659,8 +1619,6 @@
 			</div>
 		</div>
 	</article>
-</div>
-<div class="my-cont_flex">
 	<article class="my-cont">
 		<div style:--img={`url(${hardik_bodele_photo})`} class="thumb" />
 		<div class="infos">
@@ -1703,35 +1661,6 @@
 		</div>
 	</article>
 	<article class="my-cont">
-		<div style:--img={`url(${sneha_motghare_photo})`} class="thumb" />
-		<div class="infos">
-			<h2 class="title">Sneha Motghare<span class="flag" /></h2>
-			<h3 class="date">Co Head</h3>
-			<h3 class="seats"><!--status--></h3>
-			<p class="txt"><!-- data--></p>
-			<div class="details">
-				<a rel="external noopener noreferrer nofollow" target="_blank" href="">
-					<iconify-icon
-						class="text-3xl lg:text-5xl text-[#EA4335] bg-clip-text"
-						icon="mdi:email-outline"
-					/>
-				</a>
-				<a rel="external noopener noreferrer nofollow" target="_blank" href="">
-					<iconify-icon
-						class="text-3xl lg:text-5xl text-[#FF1C7C] bg-clip-text"
-						icon="mdi:instagram"
-					/>
-				</a>
-				<a rel="external noopener noreferrer nofollow" target="_blank" href="">
-					<iconify-icon
-						class="text-3xl lg:text-5xl text-[#006192] bg-clip-text"
-						icon="mdi:linkedin"
-					/>
-				</a>
-			</div>
-		</div>
-	</article>
-	<article class="my-cont">
 		<div style:--img={`url(${samruddhe_nasre_photo})`} class="thumb" />
 		<div class="infos">
 			<h2 class="title">Samruddhi Nasre<span class="flag" /></h2>
@@ -1761,6 +1690,7 @@
 		</div>
 	</article>
 </div>
+
 {/if}
 <style>
 
