@@ -61,6 +61,7 @@ import qmaster from '$lib/assets/icons/qmaster.png?url';
 
 // import p_coming_soon from '$lib/assets/posters/coming-soon.png?url';
 import p_avishkar from '$lib/assets/posters/avish.jpg';
+import p_BIS from '$lib/assets/posters/bis.png'
 import p_bridge_o_craft from '$lib/assets/posters/bridge-o-craft.jpg';
 import p_caddiction from '$lib/assets/posters/caddiction.jpg?url';
 import p_codeventure from '$lib/assets/posters/cv.jpg';
@@ -71,7 +72,7 @@ import p_cadoshit from '$lib/assets/posters/cad-o-shop.jpg';
 import p_cricbash from '$lib/assets/posters/cb.jpg';
 import p_foodoholics from '$lib/assets/posters/fh.jpg';
 import p_gsdc from '$lib/assets/posters/ML.jpg';
-import p_jigyasa from '$lib/assets/posters/jigyasa.jpg';
+import p_jigyasa from '$lib/assets/posters/jigyasa.png';
 import p_roborace from '$lib/assets/posters/rr.jpg';
 import p_stargaze from '$lib/assets/posters/sg.jpg';
 import p_stock from '$lib/assets/posters/ST.jpg';
@@ -88,11 +89,11 @@ export const EVENTS: AdhyaayaEvent[] = [
 			'Respawn is an e-sports event featuring popular games like COD, VALORANT and CHESS, available on Mobile and PC platforms. Open to all ages, COD and VALORANT have a team entry fee, with teams of 4 and 5 players respectively. CHESS has a solo entry fee. Matches in COD and VALORANT last for a maximum of 40 minutes and cheating will result in a ban. Joining information will be provided through a WhatsApp group.',
 		amount: [0, 0, 0],
 		team_members: [0, 0, 0],
-		start_date: new Date('10 Mar 2023'),
-		end_date: new Date('11 Mar 2023'),
+		start_date: new Date('10 Feb 2023'),
+		end_date: new Date('20 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: `url::${respawn}`,
-		poster: p_respawn,
+		poster: p_BIS,
 		contact: [
 			{
 				name: 'Rohit Bhoge (Valo & COD)',
@@ -236,8 +237,8 @@ export const EVENTS: AdhyaayaEvent[] = [
 			'Avishkar is a project competition for engineering students to showcase their innovative ideas. Teams can have up to 5 members and projects can be in hardware or software categories. Competition consists of two rounds: elimination and questionnaire. Register today!',
 		amount: [159_00, 159_00],
 		team_members: [2, 4],
-		start_date: new Date('9 Mar 2023 13:00'),
-		end_date: new Date('9 Mar 2023'),
+		start_date: new Date('20 Feb 2024'),
+		end_date: new Date('20 Feb 2024'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: 'flat-color-icons:idea',
 		poster: p_avishkar,
@@ -255,62 +256,6 @@ export const EVENTS: AdhyaayaEvent[] = [
 		is_open: true,
 		whatsapp_link: 'https://chat.whatsapp.com/BPDlJw6eH90LKUv0AGcvAg'
 	},
-	// {
-	// 	id: 'avishkar-offline',
-	// 	mode: 'offline',
-	// 	category: 'technical',
-	// 	name: 'Avishkar',
-	// 	description:
-	// 		'Avishkar is a project competition for engineering students to showcase their innovative ideas. Teams can have up to 5 members and projects can be in hardware or software categories. Competition consists of two rounds: elimination and questionnaire. Register today!',
-	// 	amount: [159_00, 159_00, 159_00, 159_00],
-	// 	team_members: [1, 2, 3, 4],
-	// 	start_date: new Date('9 Mar 2023 13:00'),
-	// 	end_date: new Date('9 Mar 2023'),
-	// 	small_image: 'https://placeimg.com/360/360/tech',
-	// 	icon: 'flat-color-icons:idea',
-	// 	poster: p_avishkar,
-	// 	contact: [
-	// 		{
-	// 			name: 'Anmol Moray',
-	// 			phone: '8956886685'
-	// 		},
-	// 		{
-	// 			name: 'Pawan Vishwakarma',
-	// 			phone: '7499365703'
-	// 		}
-	// 	],
-	// 	is_active: true,
-	// 	is_open: false,
-	// 	whatsapp_link: 'https://chat.whatsapp.com/BPDlJw6eH90LKUv0AGcvAg'
-	// },
-	// {
-	// 	id: 'caddiction',
-	// 	mode: 'offline',
-	// 	category: 'technical',
-	// 	name: 'Caddiction',
-	// 	description:
-	// 		"Participate in Adhaaya's CADDICTION, a thrilling 3D designing competition that will test your skills and let you compete with your peers. This exciting event comprises two rounds, an online quiz, and a 3D modeling challenge where you can use any CAD software or parametric software to showcase your abilities. The quiz and challenge questions will be tailored to your branch. The event is open to individuals and duos, and there are exciting prizes worth 8K to be won.",
-	// 	amount: [79_00, 149_00],
-	// 	team_members: [1, 2],
-	// 	start_date: new Date('11 Mar 2023 12:00'),
-	// 	end_date: new Date('11 Mar 2023'),
-	// 	small_image: 'https://placeimg.com/360/360/tech',
-	// 	icon: 'carbon:cad',
-	// 	poster: p_caddiction,
-	// 	contact: [
-	// 		{
-	// 			name: 'Vedant Udapure',
-	// 			phone: '7507602580'
-	// 		},
-	// 		{
-	// 			name: 'Aishwarya Dharme',
-	// 			phone: '8530676156'
-	// 		}
-	// 	],
-	// 	is_active: false,
-	// 	is_open: false,
-	// 	whatsapp_link: 'https://chat.whatsapp.com/BIEeiqLyfQg41ZKZBT06WG'
-	// },
 	{
 		id: 'vp',
 		mode: 'offline',
@@ -380,8 +325,8 @@ export const EVENTS: AdhyaayaEvent[] = [
 			'Innovation Express, a dynamic event fostering creativity and ingenuity, accelerates the journey of groundbreaking ideas, propelling participants into a fast-paced realm of innovation and collaboration',
 		amount: [249_00, 249_00, 249_00, 249_00, 249_00],
 		team_members: [1, 2, 3, 4, 5],
-		start_date: new Date('11 Mar 2023 11:00'),
-		end_date: new Date('11 Mar 2023'),
+		start_date: new Date('20 Feb 2024'),
+		end_date: new Date('20 Feb 2024'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: `url::${inexpress}`,
 		poster: p_bridge_o_craft,
@@ -409,11 +354,11 @@ export const EVENTS: AdhyaayaEvent[] = [
 			'Explore the boundless skies at our exhilarating aeromodelling workshop, where enthusiasts come together to craft, customize, and soar high with their handcrafted flying machines. Unleash your creativity and engineering prowess in this hands-on experience that promises a thrilling journey into the world of aviation.',
 		amount: [249_00, 249_00, 249_00, 249_00, 249_00],
 		team_members: [1, 2, 3, 4, 5],
-		start_date: new Date('11 Mar 2023 11:00'),
-		end_date: new Date('11 Mar 2023'),
+		start_date: new Date('20 Feb 2023 11:00'),
+		end_date: new Date('20 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: `url::${aeromodel}`,
-		poster: p_bridge_o_craft,
+		poster: p_BIS,
 		contact: [
 			{
 				name: 'Kalpana Rathod',
@@ -438,11 +383,11 @@ export const EVENTS: AdhyaayaEvent[] = [
 			'Structure Spy, an innovative event, invites participants to unravel the secrets of design and architecture, fostering a creative exploration of built environments and inspiring a deeper understanding of the hidden stories within structures',
 		amount: [249_00, 249_00, 249_00, 249_00, 249_00],
 		team_members: [1, 2, 3, 4, 5],
-		start_date: new Date('11 Mar 2023 11:00'),
-		end_date: new Date('11 Mar 2023'),
+		start_date: new Date('20 Feb 2023 11:00'),
+		end_date: new Date('20 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: `url::${sspy}`,
-		poster: p_bridge_o_craft,
+		poster: p_BIS,
 		contact: [
 			{
 				name: 'Kalpana Rathod',
@@ -467,11 +412,11 @@ export const EVENTS: AdhyaayaEvent[] = [
 			'Quiz Masters, an intellectually charged event, combines the thrill of quiz-solving with the art of critical thinking, challenging minds to soar beyond facts and dive deep into the realms of analytical brilliance',
 		amount: [249_00, 249_00, 249_00, 249_00, 249_00],
 		team_members: [1, 2, 3, 4, 5],
-		start_date: new Date('11 Mar 2023 11:00'),
-		end_date: new Date('11 Mar 2023'),
+		start_date: new Date('20 Feb 2024 11:00'),
+		end_date: new Date('20 Feb 2023'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: `url::${qmaster}`,
-		poster: p_bridge_o_craft,
+		poster: p_BIS,
 		contact: [
 			{
 				name: 'Kalpana Rathod',
@@ -641,8 +586,8 @@ export const EVENTS: AdhyaayaEvent[] = [
 			'Join CAD-O-SHOP, the ultimate destination for all aspiring engineers and designers! This event is an incredible opportunity to learn about the latest software trends and techniques demanded by the industry. With the guidance of expert professionals, you can explore the world of 3D modelling and turn your imagination into reality.',
 		amount: [0],
 		team_members: [1],
-		start_date: new Date('10 Mar 2023 11:00'),
-		end_date: new Date('10 Mar 2023'),
+		start_date: new Date('20 Feb 2024 11:00'),
+		end_date: new Date('20 Feb 2024'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: `url::${Lounge}`,
 		poster: p_lounge,
@@ -670,8 +615,8 @@ export const EVENTS: AdhyaayaEvent[] = [
 			"Are you passionate about serving your country technically? Want to gain insights and knowledge from esteemed personalities of Defense services/civil services? Join Trishakti Cell in collaboration with Adhyaaya for JIGYASA- an exclusive live interview with Air Vice Marshal Suryakant Chintaman Chafekar (AVSM,SC) Retd. Discover, Diagnose, and Demystify the ways to achieve your goals through this insightful event. Don't miss out on this opportunity to hear from a seasoned expert in the field! Register now, it's free of cost and open to all!",
 		amount: [0],
 		team_members: [1],
-		start_date: new Date('9 Mar 2023 15:00'),
-		end_date: new Date('9 Mar 2023'),
+		start_date: new Date('22 Feb 2024'),
+		end_date: new Date('22 Feb 2024'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: `url::${jigyasa}`,
 		poster: p_jigyasa,
@@ -718,27 +663,6 @@ export const EVENTS: AdhyaayaEvent[] = [
 		is_open: false,
 		whatsapp_link: 'https://chat.whatsapp.com/Kh6yyGQAQRhDOtQ4tUDJFG'
 	},
-	// {
-	// 	id: 'robotics-workshop',
-	// 	mode: 'offline',
-	// 	category: 'workshops',
-	// 	name: 'build a bot',
-	// 	description: 'blah blah blah',
-	// 	amount: [1600_00],
-	// 	team_members: [1],
-	// 	start_date: new Date('9 Mar 2023'),
-	// 	end_date: new Date('9 Mar 2023'),
-	// 	small_image: 'https://placeimg.com/360/360/tech',
-	// 	icon: 'carbon:code',
-	// 	poster: p_coming_soon,
-	// 	contact: [
-	// 		{
-	// 			name: 'suss',
-	// 			phone: '1234567890'
-	// 		}
-	// 	],
-	// 	is_active: true
-	// },
 	{
 		id: 'stock-market-workshop',
 		mode: 'offline',
@@ -749,8 +673,8 @@ export const EVENTS: AdhyaayaEvent[] = [
 			"Unleash the Power of the Stock Market: Join us for an exciting offline workshop where you'll learn the fundamentals of investing, develop your own trading strategies, and gain valuable insights from industry experts. Discover how to navigate the twists and turns of the market and make informed decisions that can lead to financial success. Whether you're a beginner or an experienced trader, this workshop is your opportunity to level up your stock market game and achieve your investment goals.",
 		amount: [49_00],
 		team_members: [1],
-		start_date: new Date('9 Mar 2023 13:00'),
-		end_date: new Date('9 Mar 2023'),
+		start_date: new Date('21 Feb 2024 11:00'),
+		end_date: new Date('21 Feb 2024'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: `url::${stock}`,
 		poster: p_stock,
@@ -797,53 +721,4 @@ export const EVENTS: AdhyaayaEvent[] = [
 		is_open: true,
 		whatsapp_link: 'https://chat.whatsapp.com/BD6gqwlO5FC5qL4I4WEKAy'
 	}
-	// {
-	// 	id: 'ev-workshop',
-	// 	mode: 'offline',
-	// 	category: 'workshops',
-	// 	name: 'EV Workshop',
-	// 	description: 'blah blah blah',
-	// 	amount: [100_00],
-	// 	team_members: [1],
-	// 	start_date: new Date('9 Mar 2023'),
-	// 	end_date: new Date('9 Mar 2023'),
-	// 	small_image: 'https://placeimg.com/360/360/tech',
-	// 	icon: 'bi:ev-station-fill',
-	// 	poster: p_coming_soon,
-	// 	contact: [
-	// 		{
-	// 			name: 'Devansh Parapalli',
-	// 			phone: '1234567890'
-	// 		}
-	// 	],
-	// 	is_active: true
-	// },
-	// {
-	// 	id: 'aeromodelling-workshop',
-	// 	mode: 'offline',
-	// 	category: 'workshops',
-	// 	name: 'Multirotor Workshop',
-	// 	description:
-	// 		"Learn about the exciting world of unmanned aerial vehicles (UAVs) with the Multirotor Workshop at Government College of Engineering in Nagpur. This two-day workshop covers the basics of multi-rotors and offers hands-on experience in assembling and configuring a UAV. Led by experienced instructors, it's perfect for beginners and experts alike. Register now to gain practical knowledge and take the first step towards becoming a UAV expert.",
-	// 	amount: [2400_00],
-	// 	team_members: [1],
-	// 	start_date: new Date('9 Mar 2023'),
-	// 	end_date: new Date('9 Mar 2023'),
-	// 	small_image: 'https://placeimg.com/360/360/tech',
-	// 	icon: `url::${multirotor}`,
-	// 	poster: p_coming_soon,
-	// 	contact: [
-	// 		{
-	// 			name: 'Sahil Brahme',
-	// 			phone: '9552269716'
-	// 		},
-	// 		{
-	// 			name: 'Parth Tirmare',
-	// 			phone: '9028606866'
-	// 		}
-	// 	],
-	// 	is_active: true,
-	// is_open: false,
-	// 	whatsapp_link: 'https://chat.whatsapp.com/HA17R0Jp55cAe6rq6agUfz'
-	// }
 ];

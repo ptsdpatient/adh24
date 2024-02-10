@@ -72,11 +72,6 @@
 <!-- <Nav /> -->
 {#if $page.url.pathname === '/teams'}
 
-<div
-	
-	id="dna-bg"
-	class="fixed h-screen w-screen -z-50 bg-red-400 opacity-75"
-/>
 <!-- bind:this={heading} -->
 <div class="flex_title !mt-0 pt-20">Advisors</div>
 <!-- bind:this={container} -->
@@ -226,7 +221,7 @@
 	<article class="my-cont">
 		<div style:--img={`url(${anukul_gosh_photo})`} class="thumb" />
 		<div class="infos">
-			<h2 class="title">Anukul Gosh<span class="flag" /></h2>
+			<h2 class="title">Anukul Ghosh<span class="flag" /></h2>
 			<h3 class="date">Coordinator</h3>
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
@@ -325,7 +320,7 @@
 	<article class="my-cont">
 		<div style:--img={`url(${om_lokhande_photo})`} class="thumb" />
 		<div class="infos">
-			<h2 class="title">Om Lokhande<span class="flag" /></h2>
+			<h2 class="title">Om Chaudhary<span class="flag" /></h2>
 			<h3 class="date">Coordinator</h3>
 			<h3 class="seats"><!--status--></h3>
 			<p class="txt"><!-- data--></p>
