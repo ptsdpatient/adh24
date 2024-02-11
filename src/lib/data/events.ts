@@ -257,7 +257,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		whatsapp_link: 'https://chat.whatsapp.com/BPDlJw6eH90LKUv0AGcvAg'
 	},
 	{
-		id: 'vp',
+		id: 'virtual-placement',
 		mode: 'offline',
 		category: 'technical',
 		name: 'Virtual Placement',
@@ -321,8 +321,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		category: 'technical',
 		name: 'Innovation Xpress',
 		form_link:'https://forms.gle/FRjQ2ovAgy1M95UW7',
-		description:
-			'Innovation Express, a dynamic event fostering creativity and ingenuity, accelerates the journey of groundbreaking ideas, propelling participants into a fast-paced realm of innovation and collaboration',
+		description:"Innovation Express is an exhilarating event designed to unleash the creative genius within participants. It serves as a dynamic platform for showcasing innovation skills, groundbreaking projects, and cutting-edge research. From pioneering technologies to revolutionary ideas, innovators from various fields converge to inspire, collaborate, and push the boundaries of possibility. With opportunities for networking, mentorship, and recognition, Innovation Express empowers individuals to transform their visions into reality. Whether it's through interactive exhibits, captivating presentations, or engaging workshops, this event ignites a spark of innovation that fuels progress and drives positive change in our world.",
 		amount: [249_00, 249_00, 249_00, 249_00, 249_00],
 		team_members: [1, 2, 3, 4, 5],
 		start_date: new Date('20 Feb 2024'),
@@ -380,7 +379,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		name: 'Structure Spy',
 		form_link:'https://forms.gle/hEeaJg8xyuPHTi7G8',
 		description:
-			'Structure Spy, an innovative event, invites participants to unravel the secrets of design and architecture, fostering a creative exploration of built environments and inspiring a deeper understanding of the hidden stories within structures',
+			'Structuralspy is an interactive event focused on unraveling the intricacies of civil engineering products. Participants engage in identifying and analyzing every component within a given product, gaining a comprehensive understanding of its structural and functional elements. This hands-on exploration fosters a deeper appreciation for the complexities involved in civil engineering projects.',
 		amount: [249_00, 249_00, 249_00, 249_00, 249_00],
 		team_members: [1, 2, 3, 4, 5],
 		start_date: new Date('20 Feb 2023 11:00'),
@@ -408,8 +407,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		category: 'technical',
 		name: 'Quiz Masters',
 		form_link:'https://forms.gle/2LS9rJ37fnAq3Gya6',
-		description:
-			'Quiz Masters, an intellectually charged event, combines the thrill of quiz-solving with the art of critical thinking, challenging minds to soar beyond facts and dive deep into the realms of analytical brilliance',
+		description:'The Quiz Masters event is an exhilarating challenge that pushes participants mental acuity to the limit. Combining elements of coding, mechanics, and electrical components, this event tests problem-solving skills, technical knowledge, and quick thinking. Participants must navigate through a series of intricate questions and tasks, ranging from deciphering complex algorithms to troubleshooting mechanical and electrical systems. With each question designed to stimulate critical thinking and creativity, the Quiz Masters event promises an intense and rewarding experience for those ready to showcase their expertise in the realms of coding, mechanics, and electrical engineering.',
 		amount: [249_00, 249_00, 249_00, 249_00, 249_00],
 		team_members: [1, 2, 3, 4, 5],
 		start_date: new Date('20 Feb 2024 11:00'),
@@ -583,8 +581,8 @@ export const EVENTS: AdhyaayaEvent[] = [
 		name: 'Lounge',
 		form_link:'https://forms.gle/WJmUVBYbJAm3icfD6',
 		description:
-			'Join CAD-O-SHOP, the ultimate destination for all aspiring engineers and designers! This event is an incredible opportunity to learn about the latest software trends and techniques demanded by the industry. With the guidance of expert professionals, you can explore the world of 3D modelling and turn your imagination into reality.',
-		amount: [0],
+			'Welcome to the "Lounge" session, a collaborative event between ADHYAAYA and the Rotaract Club of GCOEN. We are honored to have two distinguished guests joining us: Mr. Sandip Joshi, former Mayor of Nagpur, and Mr. Vivek Deshpande, Co-founder & Director of Space Wood Furnitures Pvt.Ltd. Get ready for an insightful and engaging session as we delve into the experiences and expertise of these accomplished individuals',
+			amount: [0],
 		team_members: [1],
 		start_date: new Date('20 Feb 2024 11:00'),
 		end_date: new Date('20 Feb 2024'),
