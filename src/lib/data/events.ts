@@ -609,10 +609,10 @@ export const EVENTS: AdhyaayaEvent[] = [
 		name: 'Jigyasa',
 		form_link:'https://forms.gle/A2HJTjxd58EMYWrb6',
 		description:
-			"Are you passionate about serving your country technically? Want to gain insights and knowledge from esteemed personalities of Defense services/civil services? Join Trishakti Cell in collaboration with Adhyaaya for JIGYASA- an exclusive live interview with Air Vice Marshal Suryakant Chintaman Chafekar (AVSM,SC) Retd. Discover, Diagnose, and Demystify the ways to achieve your goals through this insightful event. Don't miss out on this opportunity to hear from a seasoned expert in the field! Register now, it's free of cost and open to all!",
+			" Are you passionate about serving your country technically? Want to gain insights and knowledge from esteemed personalities of Defence Services/Civil Services? Join Trishakti Cell in collaboration with Adhyaaya for JIGYASA-an exclusive live webinar with SIR LOHIT MATANI (Indian Police Service).Discover, Diagnose and Demestify the ways to achieve your goals through this insightful event. Don't miss out on this opportunity to hear from a seasoned expert in the field! Register now, it's free of cost and open to all!",
 		amount: [0],
 		team_members: [1],
-		start_date: new Date('22 Feb 2024'),
+		start_date: new Date('22 Feb 2024 2:30PM'),
 		end_date: new Date('22 Feb 2024'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: `url::${jigyasa}`,
