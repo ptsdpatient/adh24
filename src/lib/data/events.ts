@@ -78,6 +78,7 @@ import p_stargaze from '$lib/assets/posters/sg.jpg';
 import p_stock from '$lib/assets/posters/ST.jpg';
 import p_vaadvivad from '$lib/assets/posters/vaad-vivaad.jpg';
 import p_lounge from '$lib/assets/posters/lounge.png'
+import p_am from '$lib/assets/posters/aeromodling.png'
 export const EVENTS: AdhyaayaEvent[] = [
 	{
 		// this is a pseudoevent.
@@ -356,7 +357,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('20 Feb 2024'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: `url::${aeromodel}`,
-		poster: p_BIS,
+		poster: p_am,
 		contact: [
 			{
 				name: 'Kalpana Rathod',
