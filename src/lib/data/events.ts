@@ -78,6 +78,9 @@ import p_stargaze from '$lib/assets/posters/sg.jpg';
 import p_stock from '$lib/assets/posters/ST.jpg';
 import p_vaadvivad from '$lib/assets/posters/vaad-vivaad.jpg';
 import p_lounge from '$lib/assets/posters/lounge.png'
+import p_ie from '$lib/assets/posters/innovationexpress.jpeg'
+import p_ss from '$lib/assets/posters/structural-spy.jpeg'
+
 import p_am from '$lib/assets/posters/aeromodling.png'
 export const EVENTS: AdhyaayaEvent[] = [
 	{
@@ -328,7 +331,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('20 Feb 2024'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: `url::${inexpress}`,
-		poster: p_bridge_o_craft,
+		poster: p_ie,
 		contact: [
 			{
 				name: 'Kalpana Rathod',
@@ -386,7 +389,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('20 Feb 2024'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: `url::${sspy}`,
-		poster: p_BIS,
+		poster: p_ss,
 		contact: [
 			{
 				name: 'Kalpana Rathod',
