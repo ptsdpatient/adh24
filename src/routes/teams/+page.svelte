@@ -73,7 +73,7 @@
 {#if $page.url.pathname === '/teams'}
 
 <!-- bind:this={heading} -->
-<div class="flex_title !mt-0 pt-20">Advisors</div>
+<div class="flex_title !mt-0 pt-20">Advisaors</div>
 <!-- bind:this={container} -->
 <div class="my-cont_flex">
 	<article class="my-cont">
