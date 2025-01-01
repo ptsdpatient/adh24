@@ -10,8 +10,8 @@
     window.addEventListener('resize',handleResize)
   });
 
-  import Hmap from '$lib/assets/Hmap.png?url';
-  import Vmap from '$lib/assets/Vmap.png?url'
+  import Hmap from '$lib/assets/map.png?url';
+  import Vmap from '$lib/assets/map.png?url'
 </script>
 
 
