@@ -2,121 +2,91 @@
 	import { enhance } from '$app/forms';
 	let submit = false;
 </script>
-<div class="h-auto md:h-auto h-[200vh] w-full flex flex-col justify-between">
-	<div class="w-full h-[100vh] ">
-	<div class="w-full md:w-5/6 m-auto md:h-full flex flex-col md:flex-row justify-center items-center p-10 text-white">
-	<div
-		class="section md:w-1/2 md:h-full w-full  h-5/6 py-3 md:py-0 rounded-lg md:rounded-r-none md:border border-white"
-	>
-		<form
-			on:submit={() => {
-				submit = true;
-				alert('Thank you for contacting us! We will get back to you soon.');
-			}}
-			class="p-2 md:p-10 h-full w-full flex flex-col items-center justify-evenly"
-			method="POST"
-			use:enhance
-			action="/forms/contact_us"
-		>
-		<!-- <div class="p-4 rounded-lg border border-white mx-auto bg-black/50"><span>Out-station participants participating in offline events are entitled to compensation. Please contact Prajwal Akarte (+91 85548 59411)</span></div> -->
-			<div class="relative z-0 mb-3 w-full group">
+ <div class="h-auto md:h-auto h-[200vh] w-full flex flex-col justify-between">
 
-				<input
-					type="text"
-					name="name"
-					id="name"
-					class="nunu block py-2 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2  appearance-none  border-gray-400  focus:outline-none focus:ring-0  peer text-xl"
-					placeholder=" "
-					required
-				/>
-				<label
-					for="name"
-					class="peer-focus:font-medium absolute text-xl text-gray-200 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-					>Name</label
-				>
-			</div>
-			<div class="relative z-0 mb-3 w-full group">
-				<input
-					type="email"
-					name="email"
-					id="email"
-					class="nunu block py-2 px-0 w-full text-xl text-white bg-transparent border-0 border-b-2  appearance-none  border-gray-400  focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-					placeholder=" "
-					required
-				/>
-				<label
-					for="email"
-					class="peer-focus:font-medium absolute text-xl  text-gray-200 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-					>Email</label
-				>
-			</div>
-			<div class="relative z-0 mb-2 w-full group pb-10">
-				<textarea
-					name="message"
-					id="message"
-					class="nunu block py-2 px-0 w-full text-xl text-white bg-transparent border-0 border-b-2  appearance-none  border-gray-400  focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-					placeholder=" "
-					required
-				/>
-				<label
-					for="message"
-					class="peer-focus:font-medium absolute text-xl  text-gray-200 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-					>Message</label
-				>
-			</div>
-			<button
-				disabled={submit}
-				class="btn btn-outline btn-block bg-black/25 hover:scale-105 hover:bg-white active:opacity-90 active:scale-95 text-xl"
-				type="submit">Submit</button
-			>
-			<div
-				class="info-container w-full flex-col items-center justify-center px-4 xl:px-10 hidden lg:flex pt-4"
-			>
-				
+	<!-- vinay changes -->
+	<div>
+        <div class="font-poppins m-auto min-h-[80vh] p-8 text-white flex flex-row justify-center items-center w-full max-w-[1200px] bg-white/5 rounded-2xl backdrop-blur-sm shadow-[0_15px_40px_rgba(0,0,0,0.3)] animate-[fadeIn_0.9s_ease-in-out] box-border   ">
+            <div class="flex-1 p-[2.7rem] max-w-[1200px]">
+                <form class="contact-form">
+                    <h2 class="font-playfair text-center font-medium tracking-[3px] mb-8 text-5xl text-white border-b-[5px] border-double border-b-white">Contact Us</h2>
+                    
+    <div class="relative mb-8 group">
+        <input type="text" id="name" name="name" required 
+            class="peer w-full p-4 border-2 border-white/50 rounded-lg outline-none bg-transparent text-white transition-all duration-300 ease-in-out text-base resize-none focus:border-white focus:bg-white/20"
+            placeholder=" "
+        />
+        <label for="name" 
+            class="absolute text-base text-white duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] 
+            bg-transparent px-2 peer-focus:px-2 
+            peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 
+            peer-focus:top-2 peer-focus:-translate-y-7 peer-focus:scale-75 
+            peer-focus:text-white left-1">
+            Name
+        </label>
+    </div>
+    
+    <div class="relative mb-8 group">
+        <input type="email" id="email" name="email" required
+            class="peer w-full p-4 border-2 border-white/50 rounded-lg outline-none bg-transparent text-white transition-all duration-300 ease-in-out text-base resize-none focus:border-white focus:bg-white/20"
+            placeholder=" "
+        />
+        <label for="email" 
+            class="absolute text-base text-white duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] 
+            bg-transparent px-2 peer-focus:px-2 
+            peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 
+            peer-focus:top-2 peer-focus:-translate-y-7 peer-focus:scale-75 
+            peer-focus:text-white left-1">
+            Email
+        </label>
+    </div>
+    
+    <div class="relative mb-8 group">
+        <textarea name="message" id="message" rows="4" required
+            class="peer w-full p-4 border-2 border-white/50 rounded-lg outline-none bg-transparent text-white  transition-all duration-300 ease-in-out text-base resize-none focus:border-white focus:bg-white/20"
+            placeholder=" "
+        ></textarea>
+        <label for="message" 
+            class="absolute text-base text-white duration-300 transform -translate-y-4 scale-75 top-2 z-10 origin-[0] 
+            bg-transparent px-2 peer-focus:px-2 
+            peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 
+            peer-focus:top-2 peer-focus:-translate-y-7 peer-focus:scale-75 
+            peer-focus:text-white left-1">
+            Message
+        </label>
+    </div>
 
-			</div>
-		</form>
-	</div>
-	<div
-		id="center-console"
-		class="section w-full md:w-1/2 m-auto h-auto md:h-full flex flex-col items-center justify-between py-3 md:py-0 rounded-lg rounded-l-none md:border-l-0 md:border md:border-white p-6"
-	>
-		<h3 class="text-5xl pt-0 md:pt-7">Contact Us</h3>
-		<div class="contact-info px-4 pt-2 flex flex-col gap-1 items-start">
-			<div class="card card-compact mx-auto shadow-xl container">
-				<div class="card-body">
-					<h2 class="card-title nunu">For Technical Queries,</h2>
-					<p class="nunu text-2xl">Mohit Deotare</p>
-					<a
-						href="https://api.whatsapp.com/send?phone=+7517345309&text=Hello!"
-						class="nunu inline-flex items-center gap-2 text-lg"
-						><iconify-icon icon="mdi:whatsapp" />75173 45309</a
-					>
-					<a
-						href="mailto:pavandeotare1@gmail.com"
-						class="nunu inline-flex items-center gap-2 overflow-clip text-ellipsis text-lg"
-						><iconify-icon icon="mdi:email-outline" />pavandeotare1@gmail.com</a
-					>
-				</div>
-			</div>
-			
-			<div class="card card-compact mx-auto shadow-xl w-full">
-				<div class="card-body ">
-					<h2 class="card-title nunu">For Event-Related Queries,</h2>
-					<p class="nunu text-2xl">Sushrut Kohale</p>
-					<a href="tel:+919096831236" class="inline-flex items-center gap-2 nunu text-lg"
-						><iconify-icon icon="mdi:phone-outline" /> 97666 55788</a
-					>
-					<a href="mailto:sushrutkohale123@gmail.com" class="inline-flex items-center gap-2 nunu text-lg"
-						><iconify-icon icon="mdi:email-outline" />sushrutkohale123@gmail.com</a
-					>
-				</div>
-			</div>
-			<!-- <div class="text-6xl mx-auto">OR</div> -->
-		</div>
-		<div class="contact-links" />
-	</div>
-</div></div>
+	<button
+	disabled={submit}
+	class="btn btn-outline btn-block bg-black/25 hover:scale-105 hover:bg-white active:opacity-90 active:scale-95 text-xl"
+	type="submit">Submit</button
+>
+            </form>
+        </div>
+
+        <div class="flex-1 p-[2.7rem] max-w-[24rem] ml-8 border-l-[3px] border-l-[rgba(6,0,6,0.218)] flex flex-col justify-around p-5">
+            <section class="p-5 rounded-lg bg-[rgba(6,0,6,0.14)] backdrop-blur-sm shadow-[0_8px_24px_rgba(0,0,0,0.3)]">
+                <h4 class="font-light text-white mb-4 text-lg">For Technical Queries</h4>
+                <h3 class="font-normal my-2.5 text-base text-white">Zishan Deshmukh</h3>
+                <h3 class="font-normal my-2.5 text-base text-white">
+                    <img src="icon-what.png" alt="" class=" mr-2.5 align-middle">918283812748914
+                </h3>
+                <h3 class="font-normal my-2.5 text-base text-white">
+                    <img src="email-logo.png" alt="" class=" mr-2.5 align-middle">@gmail.com
+                </h3>
+
+                <h4 class="font-light text-white mb-4 text-lg">For Event-Related Queries</h4>
+                <h3 class="font-normal my-2.5 text-base text-white">Miss. ABC</h3>
+                <h3 class="font-normal my-2.5 text-base text-white">
+                    <img src="icon-what.png" alt="" class=" mr-2.5 align-middle">3e243242443
+                </h3>
+                <h3 class="font-normal my-2.5 text-base text-white">
+                    <img src="email-logo.png" alt="" class=" mr-2.5 align-middle">@gmail.com
+                </h3>
+            </section>
+        </div>
+    </div>
+</div>
 
 <!-- difference in footer and contactus -->
 
@@ -205,9 +175,7 @@
 				</div>	</div>		
 </div>	
 
-<!-- <div class="section md:w-1/3 w-5/6 h-5/6 bg-black/20 py-8 md:py-0 rounded-lg border border-white">
-	<iframe title="Google Map for GCOEN" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.525563997084!2d79.05785451517583!3d21.051661192371412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4be5e617378eb%3A0x682e0bc768d22adb!2sGovernment%20Engineering%20College%2CNagpur!5e0!3m2!1sen!2sin!4v1674120640996!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="h-full w-full z-[220]"></iframe>
-</div> -->
+
 <style lang="postcss">
 	.section {
 		backdrop-filter: blur(0px);
@@ -217,3 +185,7 @@
 		@apply line-clamp-1;
 	}
 </style>
+<!-- <div class="section md:w-1/3 w-5/6 h-5/6 bg-black/20 py-8 md:py-0 rounded-lg border border-white">
+	<iframe title="Google Map for GCOEN" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.525563997084!2d79.05785451517583!3d21.051661192371412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4be5e617378eb%3A0x682e0bc768d22adb!2sGovernment%20Engineering%20College%2CNagpur!5e0!3m2!1sen!2sin!4v1674120640996!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="h-full w-full z-[220]"></iframe>
+</div> -->
+
