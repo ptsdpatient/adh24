@@ -19,7 +19,7 @@
   import niharika from '$lib/assets/images/technical team/Niharika Nagpurkar.jpg';
   import sarthak from '$lib/assets/images/technical team/Sarthak domkawle .jpg';
   import moon from '$lib/assets/images/technical team/Shreyash Moon.jpg';
-  import tarun from '$lib/assets/images/technical team/Tarun maraskolhe .jpg';
+  import tarun from '$lib/assets/images/technical team/tarun_maraskolhe.jpg';
 //organi
   import anshu from '$lib/assets/images/organisation team/Anshu Chole .jpg';
   import atharva from '$lib/assets/images/organisation team/Atharva Karale.jpg';
