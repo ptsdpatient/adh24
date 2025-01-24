@@ -61,7 +61,7 @@
 
 <div class="h-full-w-full flex items-center justify-center">
 	<div class="flex flex-col items-center justify-center">
-		<div class="text-2xl font-bold">Redirecting to payment gateway...</div>
+		<div class="text-2xl font-bold">ing to payment gateway...</div>
 		<div class="text-xl font-bold">Please do not close this tab.</div>
 		<div class="text-2xl font-bold">
 			Incase it does not redirect, please <a

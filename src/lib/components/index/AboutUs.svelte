@@ -3,22 +3,22 @@
 	import gcoen from '$lib/assets/logo/gcoen-knockout-resize.webp';
 	import { onMount } from 'svelte';
 	onMount(() => {
-		import('lite-youtube-embed');
+		// import('lite-youtube-embed');
 		import('lite-youtube-embed/src/lite-yt-embed.css');
 	});
 </script>
 
 <div
-	class="about-us-container md:w-5/6 flex flex-col items-center justify-evenly md:py-10 mx-auto px-2"
+	class="about-us-container md:w-5/6 flex flex-col items-center justify-evenly md:py-10 mx-auto px-2 bg-green-500" 
 >
 	<div class="title h-1/6 pb-10"><span class="text-4xl lg:text-6xl text-white opacity-90">About Us</span></div>
-	<div class="content flex flex-col w-full h-4/6 gap-20">
+	<div class="content flex flex-col w-full h-4/6 gap-20" style="z-index:9999">
 		
 		<div
-			class="us w-full max-w-2xl  xl:w-1/2 flex flex-col items-center justify-evenly h-auto text-justify backdrop-blur-none bg-opacity-0 rounded-lg lg:rounded-l-none p-6 gap-2 mx-auto"
+			class="h-full w-full px-4 md:px-0 md:w-4/5 mx-auto flex flex-col items-center gap-7" 
 		>
 			<img loading="lazy" src={logo} class="h-28" height="112" width="202" alt="" />
-			<p class="max-w-lg md:text-2xl nunu">
+			<p class="p-4 backdrop-blur-sm bg-black/50 rounded-2xl text-xl md:text-2xl nunu text-center border">
 				Adhyaaya is a premier technical festival, hosting a variety of events for students and
 				professionals to showcase their talents in technology and the sciences. The annual
 				symposium, organized by the Government College of Engineering in Nagpur, features lectures
@@ -34,10 +34,10 @@
 			
 		</div>
 		<div
-			class="us w-full max-w-2xl  xl:w-1/2 flex flex-col items-center justify-evenly h-auto text-justify backdrop-blur-none rounded-lg lg:rounded-l-none p-6 gap-2 mx-auto"
+			class="h-full w-full px-4 md:px-0 md:w-4/5 mx-auto flex flex-col items-center gap-7" 
 		>
 			<img loading="lazy" src={gcoen} class="h-28" height="112" width="355" alt="" />
-			<p class="max-w-lg md:text-2xl nunu">
+			<p class="p-4 backdrop-blur-sm bg-black/50 rounded-2xl text-xl md:text-2xl nunu text-center border">
 				Government College of Engineering, Nagpur is a premier engineering institute established in
 				2016, affiliated to Rashtrasant Tukadoji Maharaj Nagpur University and mentored by
 				Visvesvaraya National Institute of Technology. The campus is situated at New Khapri, Nagpur,
@@ -55,11 +55,13 @@
 		</div>
 		
 	</div>
-	<div class="flex flex-col items-center justify-center pt-10">
+	<div class="flex flex-col items-center justify-center pt-10" >
 		<lite-youtube-embed videoId="DeRLoZuCKfs" />
 		<lite-youtube videoid="DeRLoZuCKfs" playlabel="Adhyaaya'20 Aftermovie" class="w-[80vw] lg:w-[50vw] rounded-lg" />
 	</div>
-	<div class="gallery-button flex flex-col items-center justify-evenly text-justify pt-8">
+
+	
+	<div class="gallery-button flex flex-col items-center justify-evenly text-justify pt-8" style="z-index:99999">
 		<a
 			data-sveltekit-reload
 			href="/gallery"

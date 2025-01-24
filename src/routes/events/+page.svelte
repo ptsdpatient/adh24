@@ -1,3 +1,4 @@
+@ -1,401 +0,0 @@
 
 <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale = 1">
@@ -5,105 +6,114 @@
     <link rel="stylesheet" href="events/button.css">
     <link rel="stylesheet" href="events/flip.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+        
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
     body{
     background: url(events/bg1.jpg);
     background-size: cover;
     padding: 0;
     margin: 0;
     }
+
     main{
       width: 100%;
       height: 100%;
       backdrop-filter: blur(9px);
       
     }
+
     html{
       scroll-behavior: smooth;
     }
-.tech-event,.non-tech-event,.workshop{
-  width: 90%;
-  margin: auto;
-  display: flex;
-}
 
-.tech-part1,.non-tech-event-part1,.workshop-part1{
-  justify-content: space-evenly;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-.tech-part2,.non-tech-event-part2,.workshop-part2{
-  width: 60%;
-  justify-content: space-around;
-  gap: 10px;
-  margin-top: 30px;
-  flex-wrap: wrap;
-}
-.heading{
-  text-align: center;
-  margin: 20px;
-  margin-bottom: 80px;
-  padding: 30px 30px;
-  font-size: 45px;
-  font-family: "Chakra Petch",Verdana, Geneva, Tahoma, sans-serif;
-  color: white;
-  transition: all 1s linear;
-  text-shadow: 0px 0px 10px rgb(255, 0, 0);
+    .tech-event,.non-tech-event,.workshop{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    }
 
-}
+    .tech-part1,.non-tech-event-part1,.workshop-part1{
+    justify-content: space-evenly;
+    gap: 10px;
+    flex-wrap: wrap;
+    }
+    .tech-part2,.non-tech-event-part2,.workshop-part2{
+    width: 60%;
+    justify-content: space-around;
+    gap: 10px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    }
+    .heading{
+    text-align: center;
+    margin: 20px;
+    margin-bottom: 80px;
+    padding: 30px 30px;
+    font-size: 45px;
+    font-family: "Chakra Petch",Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    transition: all 1s linear;
+    text-shadow: 0px 0px 10px rgb(255, 0, 0);
 
-.main-event{
-  width: 90%;
-  margin: auto;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 50px;
-  font-family: "Chakra Petch",Verdana, Geneva, Tahoma, sans-serif;
-  padding: 20px;
-  margin-bottom: 50px;
-}
-.tech-event-main,.non-tech-event-main,.workshop-event-main{
-  height: 380px;
-   width: 300px;
-  background-color: #535353;
-}
-.main-event img{
-  height: 300px;
-}
-a{
-  text-decoration: none;
-  color: white;
-  text-shadow: 0px 0px 10px rgb(255, 0, 0);
-  
-}
-.all-tech-events,.all-nontech-events,.all-workshop{
-  padding-top: 50px;
-  padding-bottom: 50px;
-  margin-top: 100px;
-  
-}
-.all-workshop{
-  padding-bottom: 100px;
-}
-.all-event{
-  border-radius: 20px;
-  backdrop-filter: blur(10px);
-  padding-top: 100px;
-  padding-bottom: 50px;
-  margin-bottom: 50px;
-}
-video{
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  scale: 1.5;
-  object-fit: cover;
-  z-index: -1;
-}
+    }
+
+    .main-event{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 50px;
+    font-family: "Chakra Petch",Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+    margin-bottom: 50px;
+    }
+    .tech-event-main,.non-tech-event-main,.workshop-event-main{
+    height: 380px;
+    width: 300px;
+    background-color: #535353;
+    }
+
+    .main-event img{
+    height: 300px;
+    }
+
+    a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 0px 0px 10px rgb(255, 0, 0);
+    }
+
+    .all-tech-events,.all-nontech-events,.all-workshop{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 100px;
+    }
+
+    .all-workshop{
+    padding-bottom: 100px;
+    }
+
+    .all-event{
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    padding-top: 100px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    }
+
+    video{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    scale: 1.5;
+    object-fit: cover;
+    z-index: -1;
+    }
     </style>
-  </head>
+</head>
 
   <body>
     <!-- <video src="events/sample-2_t7opGXnA.mp4" autoplay loop muted></video> -->
