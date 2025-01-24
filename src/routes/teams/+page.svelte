@@ -2,6 +2,7 @@
   import 'aos/dist/aos.css';
   import { onMount } from 'svelte';
 // Import AOS styles
+  // @ts-ignore
   import AOS from 'aos';
 // Import AOS library
   import aditya from '$lib/assets/images/advisors/Aditya Shinde.jpg';
