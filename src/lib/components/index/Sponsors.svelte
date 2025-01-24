@@ -1,8 +1,8 @@
 <div
-	class="us w-full max-w-4xl  xl:w-1/2 flex flex-col items-center justify-evenly h-auto text-justify rounded-lg lg:rounded-l-none p-6 gap-2 mx-auto"
+	class="us w-full max-w-4xl  xl:w-1/2 flex flex-col items-center justify-evenly h-auto text-justify rounded-lg lg:rounded-l-none p-6 gap-2 mx-auto" 
 >
 	<div
-		class="text-content h-1/2 w-full text-justify text-sm  md:text-lg xl:text-2xl flex flex-col items-center justify-center bg-clip-text "
+		class="text-content h-1/2 w-full text-justify text-sm  md:text-lg xl:text-2xl flex flex-col items-center justify-center bg-clip-text " style="z-index:99999"
 	>
 		<div
 			class="max-w-2xl lg:max-w-4xl mx-auto px-8 pt-4 md:pl-10 pb-4 nunu backdrop-blur-none rounded-lg mb-12 text-xl md:text-2xl font-bold"

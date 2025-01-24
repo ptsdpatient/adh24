@@ -3,6 +3,8 @@
 	import gcoen from '$lib/assets/logo/gcoen-knockout-resize.webp';
 	import { onMount } from 'svelte';
 	onMount(() => {
+
+		
 		// import('lite-youtube-embed');
 		import('lite-youtube-embed/src/lite-yt-embed.css');
 	});
@@ -60,6 +62,8 @@
 		<lite-youtube videoid="DeRLoZuCKfs" playlabel="Adhyaaya'20 Aftermovie" class="w-[80vw] lg:w-[50vw] rounded-lg" />
 	</div>
 
+
+	
 	
 	<div class="gallery-button flex flex-col items-center justify-evenly text-justify pt-8" style="z-index:99999">
 		<a

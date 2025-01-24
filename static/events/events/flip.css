@@ -1,0 +1,91 @@
+.maincontainer{
+  width: 270px;
+  height: 260px;
+  margin-top: 10px;
+  background: none;
+}
+
+.thecard{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  border-radius: 10px;
+  border-radius: 20px;
+  transition: all 0.8s linear;
+  text-align: center;
+  
+ 
+}
+
+
+.thecard:hover{
+  transform: rotateY(180deg);
+}
+
+
+ .thefront{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.512);
+  color: #ffffff;
+  letter-spacing: 2px;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.theback{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden; 
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.685);
+  text-align: center;
+  transform: rotateY(180deg);
+   backdrop-filter: blur(10px);
+   
+}
+
+
+
+.thefront h1{
+  font-family: 'Playfair Display', sans-serif;
+  margin-top: -10px;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+}
+
+ .theback p{
+  font-family: "Poppins",Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px;
+  font-weight: normal;
+  font-size: 12px;
+  text-align: center;
+}
+.thefront img{
+  margin-bottom: 5px;
+}
+.theback button{
+  padding: 10px;
+  width: 100px;
+  color: white;
+  background: transparent;
+  border: 1px solid white;
+}
