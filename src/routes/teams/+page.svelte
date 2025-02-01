@@ -23,7 +23,7 @@ import { AdditiveAnimationBlendMode } from 'three';
   <div class="backdrop-blur-sm bg-black/30">
     {#each teams as team}
       <div class="w-full flex flex-col gap-3 p-10 gap-20">
-        <div class="text-6xl w-full text-center text-white py-5">{team.name}</div>
+        <div class="text-4xl md:text-6xl w-full text-center text-white py-5">{team.name}</div>
         <div class="w-full flex flex-wrap gap-4 p-4 justify-center items-center">
           {#each team.members as member}
             <div  data-aos="fade-up"
