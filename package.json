@@ -77,6 +77,7 @@
 		"@sendgrid/mail": "^7.7.0",
 		"@splidejs/svelte-splide": "^0.2.9",
 		"@sveltejs/adapter-vercel": "^1.0.6",
+		"adhyaaya23": "file:",
 		"aos": "^2.3.4",
 		"gltf-loader": "^1.0.0",
 		"pnpm": "^8.15.1",
