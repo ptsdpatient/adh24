@@ -97,11 +97,7 @@ export const teams : Team[]=[
         photoUrl: '/images/organisation team/Vijay Chirde.jpg',
         postContent: 'Co-head',
       },
-      {
-        name: 'Tushar Bandger',
-        photoUrl: '/images/organisation team/Tushar Bandger .jpg',
-        postContent: 'Co-head',
-      },
+      
     ]
   },{
     name:"Technical Team",
@@ -200,11 +196,7 @@ export const teams : Team[]=[
         photoUrl: '/images/publicity team/Yashash meshram.jpg',
         postContent: 'Co-head',
       },
-      {
-        name: 'Himanshu Thakre',
-        photoUrl: '/images/publicity team/Himanshu Thakre .jpg',
-        postContent: 'Head',
-      },
+      
     ]
   },
   {
@@ -220,11 +212,7 @@ export const teams : Team[]=[
         photoUrl: '/images/accounting team/Bhumi Raut.jpg',
         postContent: 'Head',
       },
-      {
-        name: 'Sakshi Kawade',
-        photoUrl: '/images/accounting team/Sakshi Kawade.jpg',
-        postContent: 'Head',
-      }
+     
     ]
   },{
     name:"Decoration Team",

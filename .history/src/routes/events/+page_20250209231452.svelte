@@ -1,0 +1,410 @@
+
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale = 1">
+    <title>Events</title>
+    <link rel="stylesheet" href="events/button.css">
+    <link rel="stylesheet" href="events/flip.css">
+    <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+    body{
+    background: url(events/bg1.jpg);
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    }
+
+    main{
+      width: 100%;
+      height: 100%;
+      backdrop-filter: blur(9px);
+      
+    }
+
+    html{
+      scroll-behavior: smooth;
+    }
+
+    .tech-event,.non-tech-event,.workshop{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    }
+
+    .tech-part1,.non-tech-event-part1,.workshop-part1{
+    justify-content: space-evenly;
+    gap: 10px;
+    flex-wrap: wrap;
+    }
+    .tech-part2,.non-tech-event-part2,.workshop-part2{
+    width: 60%;
+    justify-content: space-around;
+    gap: 10px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    }
+    .heading{
+    text-align: center;
+    margin: 20px;
+    margin-bottom: 80px;
+    padding: 30px 30px;
+    font-size: 45px;
+    font-family: "Chakra Petch",Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    transition: all 1s linear;
+    text-shadow: 0px 0px 10px rgb(255, 0, 0);
+
+    }
+
+    .main-event{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 50px;
+    font-family: "Chakra Petch",Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+    margin-bottom: 50px;
+    }
+    .tech-event-main,.non-tech-event-main,.workshop-event-main{
+    height: 380px;
+    width: 300px;
+    background-color: #535353;
+    }
+
+    .main-event img{
+    height: 300px;
+    }
+
+    a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 0px 0px 10px rgb(255, 0, 0);
+    }
+
+    .all-tech-events,.all-nontech-events,.all-workshop{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 100px;
+    }
+
+    .all-workshop{
+    padding-bottom: 100px;
+    }
+
+    .all-event{
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    padding-top: 100px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    }
+
+    video{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    scale: 1.5;
+    object-fit: cover;
+    z-index: -1;
+    }
+    </style>
+</head>
+
+  <body>
+    <!-- <video src="events/sample-2_t7opGXnA.mp4" autoplay loop muted></video> -->
+    <main>
+    <section class="all-event">
+      <section class="heading">Events</section>
+      <section class="main-event">
+        <a href="#tech">
+        <div class="tech-event-main glow">
+            <h1>Technical</h1>
+            <span>Events</span>
+            <img src="events/tech.png" alt="">
+          </div>
+        </a>
+        <a href="#non-tech">
+        <div class="non-tech-event-main glow">
+          <h1>Non-Technical</h1>
+          <span>Events</span>
+          <img src="events/nontech.png" alt="" style="position: relative;
+          left: 20px; top: 5px;">
+        </div>
+      </a>
+      <a href="#workshop">
+      <div class="workshop-event-main glow">
+        <h1>Workshops</h1>
+        <img src="events/icons/workshops copy.png" alt="" >
+      </div>
+    </a>
+    </section>
+      </section>
+      <section class="all-tech-events">
+      <section class="heading" id="tech">  <a href="#check1" id="check1">Technical Events</a></section>
+      <section class="tech-event tech-part1">
+      <div class="maincontainer">
+        <div class="thecard">
+          <div class="thefront">
+            <img src="events/icons/avishkar.png" alt="" style="height: 200px;">
+            <h1>Avishkar</h1>
+          </div>
+          <div class="theback">
+          <p>Avishkar is a project competition for engineering students to showcase their innovative ideas. Teams can have up to 5 members and projects can be in hardware or software categories. Competition consists of two rounds: elimination and questionnaire. Register today!</p>
+        <button class="btn">Register</button>
+      </div>
+    </div>
+  </div>
+  <div class="maincontainer">
+  <div class="thecard">
+    <div class="thefront">
+      <img src="events/icons/spectrum.png" alt="" style="height: 175px; margin-top: 15px; margin-bottom: 15px; ">
+      <h1>Virtual Placement</h1>
+    </div>
+    <div class="theback">
+      <p style="font-size: 10px;">Attention students! Ready for your dream job? Adhyaaya'24 Virtual Placement helps you prepare and excel. For just ₹70, win up to ₹7k! Test your skills: mental ability, communication, stress-handling, and confidence. Register now and impress future employers!</p>
+      <button class="btn">Register</button>
+    </div>
+  </div>
+  </div>
+  <div class="maincontainer">
+    <div class="thecard">
+      <div class="thefront">
+        <img src="events/icons/code-avenger.png" alt="" style="height: 175px; margin-top: 15px; margin-bottom: 15px; ">
+        <h1>CodeVenture</h1>
+      </div>
+      <div class="theback">
+        <p>CodeVenture is a coding competition that tests your debugging and coding skills. Showcase your expertise in mathematics, data structures, algorithms and more. Compete solo using any programming language on a PC with a good internet connection. Join us for a thrilling coding experience!</p>
+        <button class="btn">Register</button>
+      </div>
+    </div>
+    </div>
+    <div class="maincontainer">
+      <div class="thecard">
+        <div class="thefront">
+          <img src="events/icons/inexpress.jpg" alt="" style="height: 175px; margin-top: 15px; margin-bottom: 15px; ">
+          <h1>Innovation</h1>
+        </div>
+        <div class="theback">
+          <p>Innovation Express is a platform for showcasing innovative projects and research. It brings together innovators to inspire, collaborate, and network. The event offers opportunities for mentorship and recognition, empowering participants to turn their ideas into reality.</p>
+          <button class="btn">Register</button>
+        </div>
+      </div>
+      </div>
+      </section>
+      <section class="tech-event tech-part2">
+      <div class="maincontainer">
+        <div class="thecard">
+          <div class="thefront">
+            <img src="events/icons/sspy.png" alt="" style="height: 175px; margin-top: 15px; margin-bottom: 15px; ">
+            <h1>Structure Spy</h1>
+          </div>
+          <div class="theback">
+            <p>Structuralspy is an interactive event where participants analyze civil engineering products, understanding their components and their role in the overall structure.</p>
+            <button class="btn">Register</button>
+          </div>
+        </div>
+        </div>
+        <div class="maincontainer">
+          <div class="thecard">
+            <div class="thefront">
+              <img src="events/icons/qmaster.png" alt="" style="height: 175px; margin-top: 15px; margin-bottom: 15px; ">
+              <h1>Quiz Masters</h1>
+            </div>
+            <div class="theback">
+              <p>The Quiz Masters event is a challenging competition that tests participants' coding, mechanical, and electrical skills. Participants must solve complex problems, decipher algorithms, and troubleshoot systems under time pressure.</p>
+              <button class="btn">Register</button>
+            </div>
+          </div>
+          </div>
+          <div class="maincontainer">
+            <div class="thecard">
+              <div class="thefront">
+                <img src="events/icons/roborace.png" alt="" style="height: 175px; margin-top: 15px; margin-bottom: 15px; ">
+                <h1>RoboRace</h1>
+              </div>
+              <div class="theback">
+                <p>Join RoboRace, a high-speed bot race against the clock! Navigate a challenging track provided by DROID DEVS. All students are welcome, regardless of experience. Compete for prizes, start with an easy track, and finish with a challenging one. Sign up now for an unforgettable racing experience!</p>
+                <button class="btn">Register</button>
+              </div>
+            </div>
+            </div>
+          </section>
+        </section>
+        <section class="all-nontech-events">
+          <section class="heading" id="non-tech">
+            <a href="#check2" id="check2">Non-Technical Events</a></section>
+      <section class="non-tech-event non-tech-event-part1" >
+      <div class="maincontainer">
+        <div class="thecard">
+          <div class="thefront">
+            <img src="events/icons/valorant1.png" alt="" style="height: 200px;">
+            <h1>Valorant</h1>
+          </div>
+          <div class="theback">
+          <p>Immerse yourself in the electrifying world of tactical prowess and precise aim at the upcoming Valorant Tournament, where teams clash in a battle of wits and skill. Brace for intense competition and unforgettable moments as players showcase their mastery in this adrenaline-fueled gaming spectacle.!</p>
+        <button class="btn">Register</button>
+      </div>
+    </div>
+  </div>
+  <div class="maincontainer">
+  <div class="thecard">
+    <div class="thefront">
+      <img src="events/icons/BGMI.jpg" alt="" style="height: 175px; margin-top: 15px; margin-bottom: 15px; ">
+      <h1>BGMI</h1>
+    </div>
+    <div class="theback">
+      <p style="font-size: 10px;">Thrilling battles and fierce competition took center stage at the BGMI Tournament, where skilled gamers clashed in an electrifying display of strategy and precision. The event was a celebration of esports excellence, showcasing the best players vying for victory in the world of Battlegrounds Mobile India</p>
+      <button class="btn">Register</button>
+    </div>
+  </div>
+  </div>
+  <div class="maincontainer">
+    <div class="thecard">
+      <div class="thefront">
+        <img src="events/icons/respawn.png" alt="" style="height: 175px; margin-top: 15px; margin-bottom: 15px; ">
+        <h1>Chess</h1>
+      </div>
+      <div class="theback">
+        <p>.</p>
+        <button class="btn">Register</button>
+      </div>
+    </div>
+    </div>
+    <div class="maincontainer">
+      <div class="thecard">
+        <div class="thefront">
+          <img src="events/icons/vaad-vivad.png" alt="" style="height: 175px; margin-top: 15px; margin-bottom: 15px; ">
+          <h1>Vaad-Vivaad</h1>
+        </div>
+        <div class="theback">
+          <p>VAAD-VIVAAD is a public speaking event with three rounds. Participants will be given topics related to social issues and will have 2 and 4 minutes to express their ideas respectively. Register now by paying the entry fee of 49/- (solo) and boost your public speaking skills</p>
+          <button class="btn">Register</button>
+        </div>
+      </div>
+      </div>
+      </section>
+      <section class="non-tech-event non-tech-event-part2" >
+      <div class="maincontainer">
+        <div class="thecard">
+          <div class="thefront">
+            <img src="events/icons/born_psychos.png" alt="" style="height: 175px; margin-top: 15px; margin-bottom: 15px; ">
+            <h1>Born-Psychos</h1>
+          </div>
+          <div class="theback">
+            <p>Born Psychos is an adrenaline-fueled event that tests your aptitude skills through exciting rounds and challenges. Hone your critical thinking, leadership, and teamwork abilities while solving riddles and participating in elimination-style games. Join with a team of 4 for 199/-. Embrace your inner psychos and register today for a thrilling experience!</p>
+            <button class="btn">Register</button>
+          </div>
+        </div>
+        </div>
+        <div class="maincontainer">
+          <div class="thecard">
+            <div class="thefront">
+              <img src="events/icons/foodoholics.png" alt="" style="height: 175px; margin-top: 15px; margin-bottom: 15px; ">
+              <h1>Food-O-Holic</h1>
+            </div>
+            <div class="theback">
+              <p>"Food-o-Holic" is an exciting competition for teams of 4 members with an entry fee of 299. The competition consists of 3 rounds: "Screaming Baloons," "Meri Foodie Kismat," and "Desert Island." In each round, teams compete in food-related challenges and quizzes, from collecting buns with tied hands to finishing a dessert without using their hands. The winning team is decided by points or speed. Register now for a fun and thrilling culinary adventure.</p>
+              <button class="btn">Register</button>
+            </div>
+          </div>
+          </div>
+          <div class="maincontainer">
+            <div class="thecard">
+              <div class="thefront">
+                <img src="events/icons/cricbash.png" alt="" style="height: 175px; margin-top: 15px; margin-bottom: 15px; ">
+                <h1>CricBash/h1>
+              </div>
+              <div class="theback">
+                <p>Join the thrilling Cricbash cricket league with a team of 6 (mixed gender). Compete in 5-over matches with fun challenges and special "Bazooka" spot for bonus runs. Hurry and register your team now as slots are limited!</p>
+                <button class="btn">Register</button>
+              </div>
+            </div>
+            </div>
+            </section>
+          </section>
+        <section class="all-workshop">
+          <section class="heading" id="workshop" ><a href="#check3" id="check3">Workshop</a></section>
+      <section class="workshop workshop-part1">
+      <div class="maincontainer">
+        <div class="thecard">
+          <div class="thefront">
+            <img src="events/icons/aeromodel.png" alt="" style="height: 200px;">
+            <h1>AirShow</h1>
+          </div>
+          <div class="theback">
+          <p>
+            Explore the boundless skies at our exhilarating aeromodelling workshop, where enthusiasts come together to craft, customize, and soar high with their handcrafted flying machines. Unleash your creativity and engineering prowess in this hands-on experience that promises a thrilling journey into the world of aviation.</p>
+        <button class="btn">Register</button>
+      </div>
+    </div>
+  </div>
+  <div class="maincontainer">
+  <div class="thecard">
+    <div class="thefront">
+      <img src="events/icons/lounge.jpg" alt="" style="height: 175px; margin-top: 15px; margin-bottom: 15px; ">
+      <h1>Lounge</h1>
+    </div>
+    <div class="theback">
+      <p style="font-size: 10px;">Welcome to the "Lounge" session, a collaborative event between ADHYAAYA and the Rotaract Club of GCOEN. We are honored to have two distinguished guests joining us: Mr. Sandip Joshi, former Mayor of Nagpur, and Mr. Vivek Deshpande, Co-founder & Director of Space Wood Furnitures Pvt.Ltd. Get ready for an insightful and engaging session as we delve into the experiences and expertise of these accomplished individuals</p>
+      <button class="btn">Register</button>
+    </div>
+  </div>
+  </div>
+  <div class="maincontainer">
+    <div class="thecard">
+      <div class="thefront">
+        <img src="events/icons/jigyasa.png" alt="" style="height: 175px; margin-top: 15px; margin-bottom: 15px; ">
+        <h1>Jigyasa</h1>
+      </div>
+      <div class="theback">
+        <p>Are you passionate about serving your country technically? Want to gain insights and knowledge from esteemed personalities of Defence Services/Civil Services? Join Trishakti Cell in collaboration with Adhyaaya for JIGYASA-an exclusive live webinar with SIR LOHIT MATANI (Indian Police Service). Discover, Diagnose and Demestify the ways to achieve your goals through this insightful event. Don't miss out on this opportunity to hear from a seasoned expert in the field! Register now, it's free of cost and open to all!</p>
+        <button class="btn">Register</button>
+      </div>
+    </div>
+    </div>
+    </section>
+    <section class="workshop workshop-part2">
+    <div class="maincontainer">
+      <div class="thecard">
+        <div class="thefront">
+          <img src="events/icons/Stargaze_cover.png" alt="" style="height: 175px; margin-top: 15px; margin-bottom: 15px; ">
+          <h1>StarGaze</h1>
+        </div>
+        <div class="theback">
+          <p>Explore the depths of the universe at Adhyaaya'24! Join the Astronomy Club at GCOEN for expert guest lectures, hands-on exploration sessions, and more. Come and STARGAZE with us!.</p>
+          <button class="btn">Register</button>
+        </div>
+      </div>
+      </div>
+      <div class="maincontainer">
+        <div class="thecard">
+          <div class="thefront">
+            <img src="events/icons/stock.png" alt="" style="height: 175px; margin-top: 15px; margin-bottom: 15px; ">
+            <h1>Stock Talk</h1>
+          </div>
+          <div class="theback">
+            <p>.</p>
+            <button class="btn">Register</button>
+          </div>
+        </div>
+        </div>
+        <div class="maincontainer">
+          <div class="thecard">
+            <div class="thefront">
+              <img src="events/icons/gdsc.png" alt="" style="height: 175px; margin-top: 15px; margin-bottom: 15px; ">
+              <h1>Ml Workshop</h1>
+            </div>
+            <div class="theback">
+              <p>..</p>
+              <button class="btn">Register</button>
+            </div>
+          </div>
+          </div>
+        </section>
+          </section>
+  </main>
+  </body>
