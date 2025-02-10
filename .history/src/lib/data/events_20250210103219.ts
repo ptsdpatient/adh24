@@ -55,7 +55,7 @@ import stock from '$lib/assets/icons/stock.png?url';
 import roborace from '$lib/assets/icons/roborace.png?url';
 import inexpress from '$lib/assets/icons/inexpress.jpg?url';
 import sspy from '$lib/assets/icons/sspy.png?url';
-//import codeventures from '$lib/assets/icons/Codeventures.png?url';
+import codeventures from '$lib/assets/icons/Codeventures.png?url';
 
 // import multirotor from '$lib/assets/icons/multirotor.png?url';
 
@@ -315,7 +315,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		start_date: new Date('21 Feb 2025'),
 		end_date: new Date('21 Feb 2025'),
 		small_image: 'https://placeimg.com/360/360/tech',
-		icon: "/events/icons/codeventures.png",
+		icon: `url::${codeventures}`,
 		poster: p_codeventure,
 		contact: [
 			{

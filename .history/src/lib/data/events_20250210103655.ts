@@ -315,7 +315,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		start_date: new Date('21 Feb 2025'),
 		end_date: new Date('21 Feb 2025'),
 		small_image: 'https://placeimg.com/360/360/tech',
-		icon: "/events/icons/codeventures.png",
+		icon: ,
 		poster: p_codeventure,
 		contact: [
 			{
