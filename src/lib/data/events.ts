@@ -78,7 +78,7 @@ import p_stargaze from '$lib/assets/posters/sg.jpg';
 import p_piso from '$lib/assets/posters/pisosoccer.jpg';
 import p_yuvodaya from '$lib/assets/posters/yuvodaya.jpg';
 import p_lounge from '$lib/assets/posters/theLounge.jpg';
-import p_ie from '$lib/assets/posters/innovationexpress.jpeg';
+//import p_ie from '$lib/assets/posters/innovationexpress.jpeg';
 import p_ss from '$lib/assets/posters/structural-spy.jpeg';
 
 import p_am from '$lib/assets/posters/aeromodling.png';
@@ -660,7 +660,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		name: 'Hack On',
 		form_link: 'https://gdgc.gcoen.club/hackon',
 		description:
-			'Hack-On is a fast-paced hackathon where teams (2-4 members) develop tech solutions for real-world challenges in Sustainability, Blockchain, Gamified Learning, MedTech, and Smart Automation. Participants must bring their own devices and will receive mentorship, networking opportunities, and refreshments. Projects will be judged on innovation, feasibility, and impact, with top teams earning recognition, swags, and certificates. ',
+			'Hack-On is a fast-paced hackathon where teams (2-4 members) develop tech solutions for real-world challenges in Sustainability, Blockchain, Gamified Learning, MedTech, and Smart Automation. Participants must bring their own devices and will +receive mentorship, networking opportunities, and refreshments. Projects will be judged on innovation, feasibility, and impact, with top teams earning recognition, swags, and certificates. ',
 		amount: [0],
 		team_members: [1],
 		start_date: new Date('21 Feb 2025'),
