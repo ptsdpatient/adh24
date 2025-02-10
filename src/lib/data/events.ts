@@ -61,7 +61,7 @@ import sspy from '$lib/assets/icons/sspy.png?url';
 
 // import p_coming_soon from '$lib/assets/posters/coming-soon.png?url';
 import p_avishkar from '$lib/assets/posters/avish.jpg';
-import p_BIS from '$lib/assets/posters/bis.png';
+//import p_BIS from '$lib/assets/posters/bis.png';
 import p_bridgeocraft from '$lib/assets/posters/bridge-o-craft.jpg';
 // import p_caddiction from '$lib/assets/posters/caddiction.jpg?url';
 import p_codeventure from '$lib/assets/posters/cv.jpg';
@@ -97,7 +97,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		end_date: new Date('20 Feb 2025'),
 		small_image: 'https://placeimg.com/360/360/tech',
 		icon: `url::${respawn}`,
-		poster: p_BIS,
+		poster: "",
 		contact: [
 			{
 				name: 'Rohit Bhoge (Valo & COD)',
