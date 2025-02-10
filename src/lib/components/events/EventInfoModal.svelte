@@ -96,15 +96,15 @@
 			class="modal-container container flex justify-between flex-col xl:flex-row rounded-lg"
 		>
 			
-			<div class="image-container">
-				<img src={event.poster} alt="{event.name} poster" class="rounded-t-lg lg:rounded-l-lg" />
+			<div class="image-container pt-10 w-full flex flex-col justify-center items-center">
+				<img src={event.poster} alt="{event.name} poster" class="rounded-t-lg lg:rounded-l-lg m-auto w-2/3" />
 			</div>
 
-			<div class="content-container flex flex-col items-baseline xl:w-2/3 px-6 pt-6 bg-black bg-opacity-50 rounded-b-lg lg:rounded-r-lg">
+			<div class="content-container flex flex-col items-center  xl:w-2/3 px-6 pt-6 bg-black bg-opacity-50 rounded-b-lg lg:rounded-r-lg">
 				<h2 class="event-name mx-auto text-5xl">{event.name}</h2>
 				<p class="date nunu text-xl py-2">{display_date}</p>
-				<p class="event-description py-2 text-lg nunu max-w-4xl">{event.description}</p>
-				<p class="ec-contact py-2 nunu text-2sm">
+				<p class="event-description py-2 text-lg nunu max-w-4xl text-center">{event.description}</p>
+				<p class="ec-contact py-2 nunu text-2sm text-center">
 					For Queries Contact:<br />
 					{#each event.contact as ec}
 						<span class="nunu">{ec.name}</span> - {ec.phone}<br />
@@ -151,7 +151,7 @@
                 {/if} -->
 				</div>
 				<div
-					class="button-container flex lg:flex-row flex-col justify-around gap-4 w-full mt-4 mb-4 h-15"
+					class="button-container flex  flex-col items-center mt-10 justify-around gap-4 w-full h-15"
 				>
 					<button
 						on:click={async () => {
@@ -165,14 +165,14 @@
 							// }
 							window.open(event.form_link, "_blank")
 						}}
-						class="register-btn lg:w-1/2 px-5 py-2 bg-gradient-to-tr from-green-700 via-green-500 to-green-500 rounded-lg items-center uppercase hover:scale-110 active:scale-90 active:opacity-90 transition-all duration-300 ease-in-out font-normal-bold nunu"
+						class="register-btn px-5 py-2 bg-gradient-to-tr from-green-700 via-green-500 to-green-500 rounded-lg items-center uppercase hover:scale-110 active:scale-90 active:opacity-90 transition-all duration-300 ease-in-out font-normal-bold nunu"
 						>Register</button
 					>
 					<a
 						target="_blank"
 						rel="noreferrer"
 						href={`${$page.url.origin}/drafts/${event.id.replaceAll('::', '')}.pdf`}
-						class="learn-more-btn text-center lg:w-1/2 px-5 py-2 bg-gradient-to-tr from-blue-500 via-cyan-500 to-black-500 rounded-lg items-center uppercase hover:scale-110 active:scale-90 active:opacity-90 transition-all duration-300 ease-in-out font-normal-bold my-auto nunu"
+						class="learn-more-btn text-center px-5 py-2 bg-gradient-to-tr from-blue-500 via-cyan-500 to-black-500 rounded-lg items-center uppercase hover:scale-110 active:scale-90 active:opacity-90 transition-all duration-300 ease-in-out font-normal-bold my-auto nunu"
 						>Learn More</a
 					>
 				</div>
