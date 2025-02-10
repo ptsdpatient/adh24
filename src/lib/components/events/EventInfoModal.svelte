@@ -77,7 +77,7 @@
 </script>
 
 {#if isOpen}
-	<div class=" fixed top-0 left-0 max-h-[100vh] w-full z-[210] bg-black/50 overflow-y-auto pb-10">
+	<div class="modal-wrapper relative xl:h-full w-full z-[210] bg-black/50">
 		<button
 			class="h-12 w-12 p-2 backdrop-blur-2xl md:h-12 md:w-12 rounded-full border-2 font-bold border-white right-2 top-2 lg:right-10 lg:top-8 absolute transition-all duration-500 ease-in-out hover:scale-105 active:scale-95 z-50 mix-blend-difference"
 		>
@@ -93,18 +93,18 @@
 		<div
 			use:clickOutside
 			on:click_outside={closeModal}
-			class="modal-container container items-center flex justify-between flex-col rounded-lg"
+			class="modal-container container flex justify-between flex-col xl:flex-row rounded-lg"
 		>
 			
-			<div class="image-container pt-10 w-full flex flex-col justify-center items-center">
-				<img src={event.poster} alt="{event.name} poster" class="rounded-t-lg lg:rounded-l-lg m-auto w-2/3" />
+			<div class="w-2/3 m-auto">
+				<img src={event.poster} alt="{event.name} poster" class="rounded-t-lg lg:rounded-l-lg" />
 			</div>
 
-			<div class="content-container flex flex-col items-center  xl:w-2/3 px-6 pt-6 bg-black bg-opacity-50 rounded-b-lg lg:rounded-r-lg">
-				<h2 class="event-name mx-auto md:text-5xl text-2xl">{event.name}</h2>
-				<p class="date nunu md:text-2xl text-lg py-2">{display_date}</p>
-				<p class="event-description py-2 md:text-2xl text-lg nunu max-w-4xl text-center">{event.description}</p>
-				<p class="ec-contact py-2 nunu md:text-2xl text-lg text-md text-center">
+			<div class="content-container flex flex-col items-baseline xl:w-2/3 px-6 pt-6 bg-black bg-opacity-50 rounded-b-lg lg:rounded-r-lg max-h-[100vh] overflow-y-auto">
+				<h2 class="event-name mx-auto text-5xl">{event.name}</h2>
+				<p class="date nunu text-xl py-2">{display_date}</p>
+				<p class="event-description py-2 text-lg nunu max-w-4xl">{event.description}</p>
+				<p class="ec-contact py-2 nunu text-2sm">
 					For Queries Contact:<br />
 					{#each event.contact as ec}
 						<span class="nunu">{ec.name}</span> - {ec.phone}<br />
@@ -151,23 +151,28 @@
                 {/if} -->
 				</div>
 				<div
-					class="button-container text-lg md:text-2xl flex  flex-col items-center mt-10 justify-around gap-4 w-full h-15"
+					class="button-container flex lg:flex-row flex-col justify-around gap-4 w-full mt-4 mb-4 h-15"
 				>
 					<button
 						on:click={async () => {
 							closeModal();
 							closeAllModals();
-							
+							// if (members_selected) {
+							// 	// TODO: Change to window.location = url
+							// 	await goto(`/register?event=${event.id}&members=${members_selected}`);
+							// } else {
+							// 	await goto(`/register?event=${event.id}`);
+							// }
 							window.open(event.form_link, "_blank")
 						}}
-						class="register-btn px-5 py-3 bg-gradient-to-tr from-green-700 via-green-500 to-green-500 rounded-lg items-center uppercase hover:scale-110 active:scale-90 active:opacity-90 transition-all duration-300 ease-in-out font-normal-bold nunu w-1/2"
+						class="register-btn lg:w-1/2 px-5 py-2 bg-gradient-to-tr from-green-700 via-green-500 to-green-500 rounded-lg items-center uppercase hover:scale-110 active:scale-90 active:opacity-90 transition-all duration-300 ease-in-out font-normal-bold nunu"
 						>Register</button
 					>
 					<a
 						target="_blank"
 						rel="noreferrer"
 						href={`${$page.url.origin}/drafts/${event.id.replaceAll('::', '')}.pdf`}
-						class="learn-more-btn text-center px-5 py-3 bg-gradient-to-tr from-blue-500 via-cyan-500 to-black-500 rounded-lg items-center uppercase hover:scale-110 active:scale-90 active:opacity-90 transition-all duration-300 ease-in-out font-normal-bold my-auto nunu w-1/2"
+						class="learn-more-btn text-center lg:w-1/2 px-5 py-2 bg-gradient-to-tr from-blue-500 via-cyan-500 to-black-500 rounded-lg items-center uppercase hover:scale-110 active:scale-90 active:opacity-90 transition-all duration-300 ease-in-out font-normal-bold my-auto nunu"
 						>Learn More</a
 					>
 				</div>
