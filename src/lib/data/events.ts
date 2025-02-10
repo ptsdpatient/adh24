@@ -79,9 +79,9 @@ import p_piso from '$lib/assets/posters/pisosoccer.jpg';
 import p_yuvodaya from '$lib/assets/posters/yuvodaya.jpg';
 import p_lounge from '$lib/assets/posters/theLounge.jpg';
 //import p_ie from '$lib/assets/posters/innovationexpress.jpeg';
-import p_ss from '$lib/assets/posters/structural-spy.jpeg';
+//import p_ss from '$lib/assets/posters/structural-spy.jpeg';
 
-import p_am from '$lib/assets/posters/aeromodling.png';
+//import p_am from '$lib/assets/posters/aeromodling.png';
 export const EVENTS: AdhyaayaEvent[] = [
 	{
 		// this is a pseudoevent.
