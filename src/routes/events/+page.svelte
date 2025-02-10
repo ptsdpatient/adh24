@@ -8,7 +8,7 @@ import { openModal } from 'svelte-modals';
 
 import EventInfoModal from '../../lib/components/events/EventInfoModal.svelte';
 function getEventByName(name) {
-return EVENTS.find(event => event.name.toLowerCase() === name.toLowerCase());
+  return EVENTS.find(event => event.name.toLowerCase() === name.toLowerCase());
 }
 </script>
 <video src="events/sample.mp4" autoplay loop muted></video>
