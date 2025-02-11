@@ -11,7 +11,7 @@ function getEventByName(name) {
   return EVENTS.find(event => event.name.toLowerCase() === name.toLowerCase());
 }
 </script>
-<video src="events/sample.mp4" autoplay loop muted></video>
+<video src="/events/sample.mp4" autoplay loop muted></video>
 <style>
   
 
@@ -422,7 +422,7 @@ font-weight: bold;
     <div class="thecard">
       <div class="thefront">
         <img src="/events/icons/valorant1.png" alt="" style="height: 200px;">
-        <h1>Valorant</h1>
+        <h1>Free Fire</h1>
       </div>
       
 </div>

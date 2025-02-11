@@ -541,7 +541,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		mode: 'offline',
 		category: 'workshops',
 		name: 'Lounge',
-		form_link: 'https://forms.gle/SWQzMGjKpnrKHoXm7+',
+		form_link: 'https://forms.gle/ZVrwbbdVc3xVW7ii7',
 		description:
 			'Welcome to the "Lounge" session, a collaborative event between ADHYAAYA and the Rotaract Club of GCOEN. We are honored to have two distinguished guests joining us: Mr. Sandip Joshi, former Mayor of Nagpur, and Mr. Vivek Deshpande, Co-founder & Director of Space Wood Furnitures Pvt.Ltd. Get ready for an insightful and engaging session as we delve into the experiences and expertise of these accomplished individuals',
 		amount: [0],

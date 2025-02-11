@@ -86,16 +86,16 @@
 			<div class="card card-compact mx-auto shadow-xl container">
 				<div class="card-body">
 					<h2 class="card-title nunu">For Technical Queries,</h2>
-					<p class="nunu text-2xl">Mohit Deotare</p>
+					<p class="nunu text-2xl">Zishan Deshmukh</p>
 					<a
 						href="https://api.whatsapp.com/send?phone=+7517345309&text=Hello!"
 						class="nunu inline-flex items-center gap-2 text-lg"
-						><iconify-icon icon="mdi:whatsapp" />75173 45309</a
+						><iconify-icon icon="mdi:whatsapp" />8623886205</a
 					>
 					<a
-						href="mailto:pavandeotare1@gmail.com"
+						href="mailto:deshmukhzishan06@gmail.com"
 						class="nunu inline-flex items-center gap-2 overflow-clip text-ellipsis text-lg"
-						><iconify-icon icon="mdi:email-outline" />pavandeotare1@gmail.com</a
+						><iconify-icon icon="mdi:email-outline" />deshmukhzishan06@gmail.com</a
 					>
 				</div>
 			</div>
@@ -103,12 +103,12 @@
 			<div class="card card-compact mx-auto shadow-xl w-full">
 				<div class="card-body ">
 					<h2 class="card-title nunu">For Event-Related Queries,</h2>
-					<p class="nunu text-2xl">Sushrut Kohale</p>
+					<p class="nunu text-2xl">Yasshowardhan Pethe</p>
 					<a href="tel:+919096831236" class="inline-flex items-center gap-2 nunu text-lg"
-						><iconify-icon icon="mdi:phone-outline" /> 97666 55788</a
+						><iconify-icon icon="mdi:phone-outline" />8010786691</a
 					>
-					<a href="mailto:sushrutkohale123@gmail.com" class="inline-flex items-center gap-2 nunu text-lg"
-						><iconify-icon icon="mdi:email-outline" />sushrutkohale123@gmail.com</a
+					<a href="mailto:yasshowardhanp@gmail.com" class="inline-flex items-center gap-2 nunu text-lg"
+						><iconify-icon icon="mdi:email-outline" />yasshowardhanp@gmail.com</a
 					>
 				</div>
 			</div>
