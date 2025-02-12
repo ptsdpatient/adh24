@@ -5,7 +5,7 @@ export const template = `
 
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Adhyaaya'24 | {{event}} Registration </title>
+  <title>Adhyaaya'25 | {{event}} Registration </title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style type="text/css">
   /**

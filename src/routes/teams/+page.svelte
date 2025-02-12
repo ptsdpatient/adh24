@@ -16,8 +16,19 @@ import { AdditiveAnimationBlendMode } from 'three';
     });
   });
 </script>
-
-<div class="bg-cover bg-black/10 !scroll-smooth  bg-fixed bg-center bg-no-repeat min-h-screen bg-[url('images/background.jpg')] flex flex-col justify-center items-center  font-sans">
+<style>
+	video{
+position: fixed;
+width: 100%;
+height: 100%;
+scale: 1.5;
+object-fit: cover;
+z-index: -1;
+filter: blur(4px);
+}
+</style>
+<video src="/events/sample.mp4" autoplay loop muted></video>
+<div class="bg-cover bg-black/10 !scroll-smooth flex flex-col justify-center items-center  font-sans">
   
   
   <div class="backdrop-blur-sm bg-black/30">

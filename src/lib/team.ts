@@ -30,7 +30,7 @@ export const teams : Team[]=[
       },
       {
         name: 'Anukul Ghosh',
-        photoUrl: '/images/advisors/Anukul Ghosh.jpg',
+        photoUrl: '/images/advisors/Anukul Ghosh.png',
         postContent: 'Advisor',
       },
       {

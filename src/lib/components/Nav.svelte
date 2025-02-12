@@ -31,7 +31,7 @@
 {#if !$page.url.pathname.includes('asdfghbjnkml.swderft')}
 	<!-- bg-[#0d0028]/50 -->
 <div
-		class="fixed top-0 w-full min-h-16 z-[200] pointer-events-none flex flex-row px-4 md:px-10 py-4 bg-transparent {scrollY > 35 ? '':''}  items-center print:hidden transition-all duration-700"
+		class="fixed top-0 w-full min-h-16 z-[200] pointer-events-none flex flex-row px-4 md:px-10 py-4 bg-transparent {scrollY > 35 ? '':''}  items-center print:hidden transition-all duration-700  z-10"
 	>
 		<button
 			on:click={() => {
@@ -107,16 +107,6 @@
 					}}
 					class="menu-item">Events</a
 				>
-				<a
-					href="/timeline"
-					on:focus={() => {
-						setBackgroundPosition(bgX, -50);
-					}}
-					on:mouseover={() => {
-						setBackgroundPosition(bgX, -50);
-					}}
-					class="menu-item">Timeline</a
-				>
 				<!-- <a
 					href="/guide"
 					on:focus={() => {
@@ -169,6 +159,16 @@
 					}}
 					class="menu-item-container flex flex-col md:flex-row gap-2 md:gap-14  md:pt-10"
 				>
+				<a
+						href="/legal/timeline"
+						on:focus={() => {
+							setBackgroundPosition(-25, bgY);
+						}}
+						on:mouseover={() => {
+							setBackgroundPosition(-25, bgY);
+						}}
+						class="submenu-item text-base">Timeline</a
+					>
 					<a
 						href="/legal/privacy_policy"
 						on:focus={() => {
@@ -214,9 +214,9 @@
 					rel="noreferrer"
 					target="_blank"
 					href={social.link}
-					class="h-10 w-10 md:h-12 md:w-12 rounded-full border border-white mx-auto md:ml-0 md:mr-10 inline-flex items-center justify-center text-2xl md:text-3xl cursor-pointer {social.text} {social.bg} hover:scale-105 active:scale-95 active:opacity-90 transition-all duration-200 ease-in-out"
+					class="h-10 w-10 md:h-12 md:w-12 rounded-full border border-white mx-auto md:ml-0 md:mr-10 inline-flex items-center justify-center text-2xl md:text-3xl cursor-pointer {social.text}  hover:scale-105 active:scale-95 bg-white active:opacity-90 transition-all duration-200 ease-in-out"
 				>
-					<iconify-icon icon={social.icon} />
+					<iconify-icon icon={social.icon} style="color:black"/>
 				</a>
 			{/each}
 		</div>

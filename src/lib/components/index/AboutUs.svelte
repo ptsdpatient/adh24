@@ -14,7 +14,7 @@
 	class="about-us-container md:w-5/6 flex flex-col items-center justify-evenly md:py-10 mx-auto px-2 bg-green-500" 
 >
 	<div class="title h-1/6 pb-10"><span class="text-4xl lg:text-6xl text-white opacity-90">About Us</span></div>
-	<div class="content flex flex-col w-full h-4/6 gap-20" style="z-index:9999">
+	<div class="content flex flex-col w-full h-4/6 gap-20" style="z-index:1">
 		
 		<div
 			class="h-full w-full px-4 md:px-0 md:w-4/5 mx-auto flex flex-col items-center gap-7" 
@@ -65,7 +65,7 @@
 
 	
 	
-	<div class="gallery-button flex flex-col items-center justify-evenly text-justify pt-8" style="z-index:99999">
+	<div class="gallery-button flex flex-col items-center justify-evenly text-justify pt-8" style="z-index:1">
 		<a
 			data-sveltekit-reload
 			href="/gallery"

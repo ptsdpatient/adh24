@@ -1,6 +1,9 @@
-<svelte:head>
+<script>
+  import mp4Video from "/src/routes/events/sample.mp4"; // Correct path!
+</script><svelte:head>
 	<title>Privacy Policy | Adhyaaya'24</title>
 </svelte:head>
+<video src={mp4Video} autoplay loop muted class="blur-sm"></video>
 
 <!-- <div class="container mx-auto text-2xl pt-32 px-4">Privacy Policy</div>
 <div class="container mx-auto pt-10 px-4 nunu">
@@ -22,39 +25,31 @@
 </div> -->
 
 <div class="compalinace-content ">
-	<div class="content-container prose nunu">
+	<div class="content-container prose nunu outer-box">
 		<p class="content-head">Privacy Policy</p>
-		<div class="content-seprater" />
-		<p class="updated-date">Last updated on 27th Feb 2023</p>
+		<div class="content-seprater"/>
+		<p class="updated-date">Last updated on 11th Feb 2025</p>
 		<p class="content-text">
-			This privacy policy sets out how Adhyaaya'24 uses and protects any information that you give
-			Adhyaaya'24 when you use this website.
+			This privacy policy sets out how Adhyaaya'25 uses and protects any information that you give
+			Adhyaaya'25 when you use this website.
 		</p>
 		<p class="content-text">
-			Adhyaaya'24 is committed to ensuring that your privacy is protected. Should we ask you to
+			Adhyaaya'25 is committed to ensuring that your privacy is protected. Should we ask you to
 			provide certain information by which you can be identified when using this website, and then
 			you can be assured that it will only be used in accordance with this privacy statement.
 		</p>
 		<p class="content-text">
-			Adhyaaya'24 may change this policy from time to time by updating this page. You should check
+			Adhyaaya'25 may change this policy from time to time by updating this page. You should check
 			this page from time to time to ensure that you are happy with any changes.
 		</p>
 		<p class="content-text"><strong>We may collect the following information:</strong></p>
 		<ul class="unorder-list">
 			<li class="list-item">
-				<p class="content-text list-text">Name and job title</p>
-			</li>
-			<li class="list-item">
-				<p class="content-text list-text">Contact information including email address</p>
+				<p class="content-text list-text">Name and Contact information </p>
 			</li>
 			<li class="list-item">
 				<p class="content-text list-text">
-					Demographic information such as postcode, preferences and interests
-				</p>
-			</li>
-			<li class="list-item">
-				<p class="content-text list-text">
-					Other information relevant to customer surveys and/or offers
+					Demographic information
 				</p>
 			</li>
 		</ul>
@@ -65,25 +60,11 @@
 		</p>
 		<ul class="unorder-list">
 			<li class="list-item">
-				<p class="content-text list-text">Internal record keeping.</p>
+				<p class="content-text list-text">Record keeping.</p>
 			</li>
 			<li class="list-item">
 				<p class="content-text list-text">
-					We may use the information to improve our products and services.
-				</p>
-			</li>
-			<li class="list-item">
-				<p class="content-text list-text">
-					We may periodically send promotional emails about new products, special offers or other
-					information which we think you may find interesting using the email address which you have
-					provided.
-				</p>
-			</li>
-			<li class="list-item">
-				<p class="content-text list-text">
-					From time to time, we may also use your information to contact you for market research
-					purposes. We may contact you by email, phone, fax or mail. We may use the information to
-					customise the website according to your interests.
+					to improve our products and services.
 				</p>
 			</li>
 		</ul>
@@ -93,27 +74,11 @@
 		</p>
 		<p class="content-text"><strong>How we use cookies</strong></p>
 		<p class="content-text">
-			A cookie is a small file which asks permission to be placed on your computer's hard drive.
-			Once you agree, the file is added and the cookie helps analyses web traffic or lets you know
-			when you visit a particular site. Cookies allow web applications to respond to you as an
-			individual. The web application can tailor its operations to your needs, likes and dislikes by
-			gathering and remembering information about your preferences.
+			Cookies are small files placed on your computer that analyze web traffic and personalize your experience on websites.
 		</p>
 		<p class="content-text">
 			We use traffic log cookies to identify which pages are being used. This helps us analyses data
-			about webpage traffic and improve our website in order to tailor it to customer needs. We only
-			use this information for statistical analysis purposes and then the data is removed from the
-			system.
-		</p>
-		<p class="content-text">
-			Overall, cookies help us provide you with a better website, by enabling us to monitor which
-			pages you find useful and which you do not. A cookie in no way gives us access to your
-			computer or any information about you, other than the data you choose to share with us.
-		</p>
-		<p class="content-text">
-			You can choose to accept or decline cookies. Most web browsers automatically accept cookies,
-			but you can usually modify your browser setting to decline cookies if you prefer. This may
-			prevent you from taking full advantage of the website.
+			about webpage traffic and improve our website in order to tailor it to customer needs.
 		</p>
 		<p class="content-text"><strong>Controlling your personal information</strong></p>
 		<p class="content-text">
@@ -137,8 +102,7 @@
 			</li>
 		</ul>
 		<p class="content-text">
-			We will not sell, distribute or lease your personal information to third parties unless we
-			have your permission or are required by law to do so. We may use your personal information to
+			 We may use your personal information to
 			send you promotional information about third parties which we think you may find interesting
 			if you tell us that you wish this to happen.
 		</p>
@@ -151,6 +115,20 @@
 </div>
 
 <style lang="postcss">
+	video{
+position: fixed;
+width: 100%;
+height: 100%;
+scale: 1.5;
+object-fit: cover;
+z-index: -1;
+}
+
+.outer-box{
+		padding: 80px;
+		border: 1px solid white;
+		border-radius: 50px
+	}
 	.compalinace-content {
 		@apply py-40 px-6;
 	}
@@ -161,7 +139,7 @@
 		@apply text-4xl;
 	}
 	.content-seprater {
-		width: 28px;
+		width: 205px;
 		height: 5px;
 		background-color: #213554;
 		margin-top: 16px;

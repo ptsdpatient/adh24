@@ -13,8 +13,6 @@ function getEventByName(name) {
 </script>
 <video src="/events/sample.mp4" autoplay loop muted></video>
 <style>
-  
-
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
@@ -222,14 +220,17 @@ background: transparent;
 border: 1px solid white;
 }
 .glow {
-padding: 15px 40px;
+padding: 10px 40px;
 border: none;
 outline: none;
 color: #FFF;
+font-size:1.5rem;
 cursor: pointer;
 position: relative;
 z-index: 0;
 border-radius: 10px;
+border:2px solid #fff;
+backdrop-filter:blur(1000px);
 }
 .glow::after {
 content: "";
@@ -267,27 +268,33 @@ font-weight: bold;
 <!-- <video src="events/sample-2_t7opGXnA.mp4" autoplay loop muted></video> -->
 <main>
 <section class="all-event">
+
   <section class="heading">Events</section>
+  <!-- <svg width="500" height="200" viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg">
+  <path d="M10 ,100 Q150 ,-50,300,100,T500,100" fill="none" stroke="white"  stroke-width="30" stroke-linecap="round"></path>
+  <text x="50" y="110" font-size="40px" font-weight="bold" fill="white" font-family="arial">Brush Text</text>
+</svg> -->
   <section class="main-event">
     <a href="#tech">
     <div class="tech-event-main glow">
         <h1>Technical</h1>
         <span>Events</span>
-        <img src="/events/icons/tech.png" alt="">
+        <img src="/events/icons/tech.png" alt="" style="height:250px">
       </div>
     </a>
     <a href="#non-tech">
     <div class="non-tech-event-main glow">
       <h1>Non-Technical</h1>
       <span>Events</span>
-      <img src="/events/icons/nontech.png" alt="" style="position: relative;
-      left: 20px; top: 5px;">
+      <img src="/events/icons/nontech.png" alt="" style="height:250px">
     </div>
   </a>
   <a href="#workshop">
   <div class="workshop-event-main glow">
     <h1>Workshops</h1>
-    <img src="/events/icons/workshops copy.png" alt="" >                                                 
+    <img src="/events/icons/workshops copy.png" alt="" 
+    style="height:250px"
+    >                                                 
   </div>
 </a>
 </section>
@@ -439,7 +446,7 @@ font-weight: bold;
   }}><div class="maincontainer">
 <div class="thecard">
 <div class="thefront">
-  <img src="/events/icons/BGMI.jpg" alt="" style="height: 175px; margin-top: 15px; margin-bottom: 15px; ">
+  <img src="/events/icons/BGMI.png" alt="" style="height: 175px; margin-top: 15px; margin-bottom: 15px; ">
   <h1>BGMI</h1>
 </div>
 
@@ -475,7 +482,7 @@ if (event) {
 }}><div class="maincontainer">
 <div class="thecard">
   <div class="thefront">
-    <img src="/events/icons/piso.png" alt="" style="height: 200px;">
+    <img src="/events/icons/socer.png" alt="" style="height: 200px;">
     <h1>Piso Soccer</h1>
   </div>
   
@@ -534,7 +541,7 @@ if (event) {
   }}><div class="maincontainer">
     <div class="thecard">
       <div class="thefront">
-        <img src="/events/icons/born_psychos.png" alt="" style="height: 175px; margin-top: 15px; margin-bottom: 15px; ">
+        <img src="/events/icons/born.png" alt="" style="height: 175px; margin-top: 15px; margin-bottom: 15px; ">
         <h1>Born-Psychos</h1>
       </div>
       
@@ -553,7 +560,7 @@ if (event) {
   }}><div class="maincontainer">
       <div class="thecard">
         <div class="thefront">
-          <img src="/events/icons/foodoholics.png" alt="" style="height: 175px; margin-top: 15px; margin-bottom: 15px; ">
+          <img src="/events/icons/salad.png" alt="" style="height: 175px; margin-top: 15px; margin-bottom: 15px; ">
           <h1>Food-O-Holic</h1>
         </div>
         

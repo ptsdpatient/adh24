@@ -1,6 +1,7 @@
 <svelte:head>
 	<title>Terms and Conditions | Adhyaaya'24</title>
 </svelte:head>
+<video src="/events/sample.mp4" autoplay loop muted class="blur-sm"></video>
 <!-- 
 <div class="container mx-auto text-2xl pt-32 px-4">Terms and Conditions</div>
 <div class="container mx-auto pt-10 px-4 nunu">
@@ -30,79 +31,52 @@
 </div> -->
 
 <div class="compalinace-content">
-	<div class="content-container prose">
+	<div class="content-container prose outer-box">
 		<p class="content-head">Terms &amp; Conditions</p>
 		<div class="content-seprater" />
-		<p class="updated-date">Last updated on Oct 31st 2022</p>
+		<p class="updated-date">Last updated on Feb 11th 2025</p>
 		<p class="content-text">
-			The Website Owner, including subsidiaries and affiliates (“Website” or “Website Owner” or “we”
-			or “us” or “our”) provides the information contained on the website or any of the pages
-			comprising the website (“website”) to visitors (“visitors”) (cumulatively referred to as “you”
-			or “your” hereinafter) subject to the terms and conditions set out in these website terms and
-			conditions, the privacy policy and any other relevant terms and conditions, policies and
-			notices which may be applicable to a specific section or module of the website.
+			Welcome to our website. By using this website, you agree to these terms and conditions.
 		</p>
 		<p class="content-text">
-			Welcome to our website. If you continue to browse and use this website you are agreeing to
-			comply with and be bound by the following terms and conditions of use, which together with our
-			privacy policy govern Adhyaaya'24''s relationship with you in relation to this website.
-		</p>
-		<p class="content-text">
-			The term 'Adhyaaya'24' or 'us' or 'we' refers to the owner of the website whose
+			The term 'Adhyaaya'25' or 'us' or 'we' refers to the owner of the website whose
 			registered/operational office is Government College of Engineering, Sector-27, Mihan
 			Rehabilitation Colony, Khapri, Nagpur - 441108. The term 'you' refers to the user or viewer of
 			our website.
 		</p>
 		<p class="content-text">
-			<strong>The use of this website is subject to the following terms of use:</strong>
+			<strong>The use of this website is subject to the following terms of use :</strong>
 		</p>
 		<ul class="unorder-list">
 			<li class="list-item">
 				<p class="content-text list-text">
-					The content of the pages of this website is for your general information and use only. It
-					is subject to change without notice.
+				Adhyaaya '25's Content is for general information and may change.
 				</p>
 			</li>
 			<li class="list-item">
 				<p class="content-text list-text">
-					Events are conducted by and the right to decision is held by Adhyaaya'24.Decision by
-					Adhyaaya’24 is final and binding.
+					Adhyaaya '25 holds all decision-making rights regarding events.
 				</p>
 			</li>
 			<li class="list-item">
 				<p class="content-text list-text">
-					Accommodation and Travel will not be provided by Adhyaaya'24.
+					Adhyaaya '25 does not provide accommodation or travel.
 				</p>
 			</li>
 			<li class="list-item">
 				<p class="content-text list-text">
-					The organizers will not be responsible for any network lag or disconnectivity issues.
-					Participants have to manage the issues by themselves.
-				</p>
-			</li>
-			<li class="list-item">
-				<p class="content-text list-text">
-					Neither we nor any third parties provide any warranty or guarantee as to the accuracy,
-					timeliness, performance, completeness or suitability of the information and materials
-					found or offered on this website for any particular purpose. You acknowledge that such
-					information and materials may contain inaccuracies or errors and we expressly exclude
-					liability for any such inaccuracies or errors to the fullest extent permitted by law.
+					Adhyaaya '25 is not responsible for network issues.
 				</p>
 			</li>
 			<li class="list-item">
 				<p class="content-text list-text">
 					Your use of any information or materials on this website is entirely at your own risk, for
-					which we shall not be liable. It shall be your own responsibility to ensure that any
-					products, services or information available through this website meet your specific
-					requirements.
+					which we shall not be liable.
 				</p>
 			</li>
 			<li class="list-item">
 				<p class="content-text list-text">
-					This website contains material which is owned by or licensed to us. This material
-					includes, but is not limited to, the design, layout, look, appearance and graphics.
-					Reproduction is prohibited other than in accordance with the copyright notice, which forms
-					part of these terms and conditions.
+					This website contains material which is owned by or licensed to us.
 				</p>
 			</li>
 			<li class="list-item">
@@ -113,20 +87,19 @@
 			</li>
 			<li class="list-item">
 				<p class="content-text list-text">
-					Unauthorized use of this website may give rise to a claim for damages and/or be a criminal
-					offense.
+					Unauthorized use may result in legal action.
 				</p>
 			</li>
 			<li class="list-item">
 				<p class="content-text list-text">
-					From time to time this website may also include links to other websites. These links are
+					This website may also include links to other websites. These links are
 					provided for your convenience to provide further information.
 				</p>
 			</li>
 			<li class="list-item">
 				<p class="content-text list-text">
 					You may not create a link to this website from another website or document without
-					Adhyaaya'24’s prior written consent.
+					Adhyaaya'25’s prior written consent.
 				</p>
 			</li>
 			<li class="list-item">
@@ -137,15 +110,25 @@
 			</li>
 		</ul>
 		<p class="content-text">
-			We as a merchant shall be under no liability whatsoever in respect of any loss or damage
-			arising directly or indirectly out of the decline of authorization for any Transaction, on
-			Account of the Cardholder having exceeded the preset limit mutually agreed by us with our
-			acquiring bank from time to time
+			Payment Disclaimer: We are not liable for declined transactions due to exceeded card limits.
 		</p>
 	</div>
 </div>
 
 <style lang="postcss">
+		video{
+position: fixed;
+width: 100%;
+height: 100%;
+scale: 1.5;
+object-fit: cover;
+z-index: -1;
+}
+.outer-box{
+		padding: 80px;
+		border: 1px solid white;
+		border-radius: 50px
+	}
 	.compalinace-content {
 		@apply py-40 px-6;
 	}
@@ -156,13 +139,13 @@
 		@apply text-4xl;
 	}
 	.content-seprater {
-		width: 28px;
+		width: 205px;
 		height: 5px;
 		background-color: #213554;
 		margin-top: 16px;
 	}
 	.updated-date {
-		@apply text-sm text-gray-500 mt-4;
+		@apply text-sm text-gray-100 mt-4;
 	}
 	[class*='content-'] {
 		font-family: 'Nunito', sans-serif;

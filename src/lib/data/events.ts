@@ -37,27 +37,31 @@ export interface AdhyaayaEvent {
 	custom_properties?: AdhyaayaCustomProperty[];
 	is_open: boolean;
 }
-
-import virtual_placement_icon from '$lib/assets/icons/virtual-placement.png?url';
+import born from '$lib/assets/icons/born.png?url'
+import virtual_placement_icon from '$lib/assets/icons/vp.png?url';
 import respawn from '$lib/assets/icons/respawn.png';
-import vaad_vivad from '$lib/assets/icons/vaad-vivad.png?url';
-import foodoshit from '$lib/assets/icons/foodoholics.png?url';
+import vaad_vivad from '$lib/assets/icons/youth.png?url';
+
+import foodoshit from '$lib/assets/icons/salad.png?url';
 import cricbash from '$lib/assets/icons/cricbash.png?url';
-//import cadoshit from '$lib/assets/icons/cadoshop.png?url';
-import jigyasa from '$lib/assets/icons/jigyasa.png?url';
-import stargaze from '$lib/assets/icons/stargazer.png?url';
+
+import graffiti from '$lib/assets/icons/graffiti.png?url';
+import jigyasa from '$lib/assets/icons/soldier.png?url';
+import stargaze from '$lib/assets/icons/stargazer1.png?url';
 import gdsc from '$lib/assets/icons/gdsc.png?url';
 import valorant from '$lib/assets/icons/valorant1.png?url';
-import BGMI from '$lib/assets/icons/BGMI.jpg?url';
+import BGMI from '$lib/assets/icons/BGMI.png?url';
 import Lounge from '$lib/assets/icons/lounge.jpg?url';
 import aeromodel from '$lib/assets/icons/aeromodel.png?url';
 import stock from '$lib/assets/icons/stock.png?url';
 import roborace from '$lib/assets/icons/roborace.png?url';
 import inexpress from '$lib/assets/icons/inexpress.jpg?url';
 import sspy from '$lib/assets/icons/sspy.png?url';
-//import codeventures from '$lib/assets/icons/Codeventures.png?url';
-
-// import multirotor from '$lib/assets/icons/multirotor.png?url';
+import hackon from '$lib/assets/icons/hack-on.png?url'
+import bridge from '$lib/assets/icons/bridge.png?url';
+import piso from '$lib/assets/icons/piso.png?url'
+import code from '$lib/assets/icons/codeventures.png?url';
+import avishkar from '$lib/assets/icons/avishkar.png?url'
 
 // import p_coming_soon from '$lib/assets/posters/coming-soon.png?url';
 import p_avishkar from '$lib/assets/posters/avish.jpg';
@@ -90,7 +94,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		category: 'non-technical',
 		name: 'Respawn',
 		description:
-			'Respawn is an e-sports event featuring popular games like COD, VALORANT and CHESS, available on Mobile and PC platforms. Open to all ages, COD and VALORANT have a team entry fee, with teams of 4 and 5 players respectively. CHESS has a solo entry fee. Matches in COD and VALORANT last for a maximum of 40 minutes and cheating will result in a ban. Joining information will be provided through a WhatsApp group.',
+			'Respawn is an electrifying online gaming event featuring three competitive games Free Fire BGMI and Chess. Free Fire teams will battle in Clash Squad mode in intense 4v4 matches BGMI squads will compete in classic matches across multiple maps using a point-based system and Chess players will engage in strategic duels with time controls. This event is the perfect arena for gamers to showcase their skills strategy and teamwork.',
 		amount: [0, 0, 0],
 		team_members: [0, 0, 0],
 		start_date: new Date('10 Feb 2025'),
@@ -120,15 +124,15 @@ export const EVENTS: AdhyaayaEvent[] = [
 			}
 		]
 	},
-	// valorant
+	// free fire
 	{
 		id: 'respawn',
 		mode: 'online',
 		category: 'non-technical',
-		name: 'Valorant',
+		name: 'Free fire',
 		form_link: 'https://forms.gle/cuhF5ggTrV6bCL6AA',
 		description:
-			'Immerse yourself in the electrifying world of tactical prowess and precise aim at the upcoming Valorant Tournament, where teams clash in a battle of wits and skill. Brace for intense competition and unforgettable moments as players showcase their mastery in this adrenaline-fueled gaming spectacle.',
+			"Immerse yourself in the electrifying tournament of free fire in which you require team co ordination and e sport's skills you can win a 18k cash reward.Hurry Up make a team and Register Today!!",
 		amount: [159_00],
 		team_members: [4],
 		start_date: new Date('20,21,22 Feb 2025'),
@@ -215,13 +219,13 @@ export const EVENTS: AdhyaayaEvent[] = [
 		name: 'Avishkar',
 		form_link: 'https://forms.gle/4tGY6RnxA8vkK9rS6',
 		description:
-			'Avishkar is a project competition for engineering students to showcase their innovative ideas. Teams can have up to 5 members and projects can be in hardware or software categories. Competition consists of two rounds: elimination and questionnaire. Register today!',
+			'Avishkar is a project competition for enthusiasts who want to showcase their ideas and show their talent .Teams can have Up to 5 members and project can be in hardware or software categorise .win Exiting prices up to worth 9k for junior greeks and upto 15 k for senior greeks.Register Today itself!!',
 		amount: [159_00, 159_00],
 		team_members: [2, 4],
 		start_date: new Date('20 Feb 2025'),
 		end_date: new Date('20 Feb 2025'),
 		small_image: 'https://placeimg.com/360/360/tech',
-		icon: 'flat-color-icons:idea',
+		icon: `url::${avishkar}`,
 		poster: p_avishkar,
 		contact: [
 			{
@@ -280,7 +284,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		name: 'Virtual Placement',
 		form_link: 'https://forms.gle/T5izWo6KS4oeGoyX6',
 		description:
-			"Attention all students! Are you ready to take the first step towards your dream job? Adhyaaya'24 Virtual Placement is here to help you prepare and excel in your upcoming placements. With an entry fee of only 70/- and a price pool of up to 7k, this is an opportunity you cannot miss! You will be tested on your mental ability, communication skills, stress-handling, and confidence. Don't wait, register now and get ready to impress your future employers!",
+			"Virtual Placement is a simulated recruitment event designed to prepare students for real-world hiring processes. It consists of three rounds Campus Recruitment Test assessing aptitude and reasoning Group Discussion evaluating communication and leadership skills and Personal Interview testing technical knowledge and problem-solving. This competition helps participants understand industry expectations and improve their placement readiness.",
 		amount: [79_00],
 		team_members: [1],
 		start_date: new Date('20,21 Feb 2025'),
@@ -309,13 +313,13 @@ export const EVENTS: AdhyaayaEvent[] = [
 		name: 'CodeVenture',
 		form_link: 'https://forms.gle/kAaFxCPQ665hsMeLA',
 		description:
-			'CodeVenture is a coding competition that tests your debugging and coding skills. Showcase your expertise in mathematics, data structures, algorithms and more. Compete solo using any programming language on a PC with a good internet connection. Join us for a thrilling coding experience!',
+			"Codeventure succes depends on synergizing coding skills, problem-solving strategies, and teamwork dynamics. Codeventure  proposes that optimal team performance is achieved when members leverage individual strengths, employ agile communication, and adapt to challenges through iterative learning. By balancing technical expertise with collaborative flexibility, teams can efficiently navigate Codeventure's complex problem-solving landscape and achieve superior outcomes.",
 		amount: [0],
 		team_members: [1],
 		start_date: new Date('21 Feb 2025'),
 		end_date: new Date('21 Feb 2025'),
 		small_image: 'https://placeimg.com/360/360/tech',
-		icon: "/events/icons/codeventures.png",
+		icon: `url::${code}`,
 		poster: p_codeventure,
 		contact: [
 			{
@@ -340,13 +344,13 @@ export const EVENTS: AdhyaayaEvent[] = [
 		name: 'Piso Soccer',
 		form_link: 'https://forms.gle/JHmRFSisuXCUq69b7',
 		description:
-			'Piso Soccer is a fast-paced knockout football tournament that tests teamwork, strategy, and agility. In this high-intensity elimination format, teams battle to stay in the game—winners advance, while losers are eliminated. With quick gameplay and competitive action, it’s the ultimate test of endurance and skill. '
+			'Piso Soccer is a high-intensity knockout football tournament where teams battle to stay in the game. Each team consists of 6 players + 2 substitutes, competing on a compact field for fast-paced action. Matches follow a direct elimination format, with losing teams eliminated and winners advancing. Standard futsal rules apply, demanding quick reflexes, strategic passing, and coordinated teamwork. The competition intensifies with each round, leading to a thrilling final where the ultimate champions emerge.'
 		,amount: [249_00, 249_00, 249_00, 249_00, 249_00],
 		team_members: [1, 2, 3, 4, 5],
 		start_date: new Date('20 Feb 2025 11:00'),
 		end_date: new Date('20 Feb 2025'),
 		small_image: 'https://placeimg.com/360/360/tech',
-		icon: `url::${sspy}`,
+		icon: `url::${piso}`,
 		poster: p_piso,
 		contact: [
 			{
@@ -398,7 +402,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		name: 'RoboRace',
 		form_link: 'https://forms.gle/48tUqBQd8p9ov58v7',
 		description:
-			"Are you ready to test your driving skills in a high-octane race against the clock? Join us for RoboRace, where you'll have the opportunity to navigate a challenging race track using a bot provided by DROID DEVS. Whether you're a seasoned pro or a first-time racer, this event is open to all students, so grab your friends and sign up for a chance to win big prizes! With an easier track to start and a final round with even more challenging obstacles, the competition will be fierce, but only the fastest will come out on top. So what are you waiting for? Join us for an unforgettable event that's sure to be a highlight of the year!",
+			"Roborace success hinges on harmonizing algorithmic precision, mechanical optimization, and strategic adaptability. RDT posits that championship teams balance rapid course mapping, real-time sensor data analysis, and calculated risk-taking. By synchronizing computational power with human intuition, teams can outmaneuver opponents, maximize speed, and dominate the Roborace competition.",
 		amount: [69_00],
 		team_members: [1],
 		start_date: new Date('21 Feb 2025'),
@@ -427,7 +431,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		name: 'Yuvodaya',
 		form_link: 'https://forms.gle/C9YHAVwwC7r5Tjia7',
 		description:
-			'Yuvodaya Youth Parliament is a platform for young minds to engage in debates, policy discussions, and legislative simulations. Featuring sessions like the General Speaker’s List, Zero Hour, and Legislative Business Hour, it fosters critical thinking, leadership, and public speaking while providing real-world insights into governance. The Yuvodaya Youth Parliament is designed to provide participants with a real-world parliamentary experience, fostering critical thinking, leadership, and public speaking skills.',
+			'Yuvodaya Youth Parliament is a structured debate and policy discussion platform where participants experience real-world parliamentary procedures. The event fosters leadership, public speaking, and problem-solving skills through legislative simulations and discussions on governance and policy-making.',
 		amount: [49_00],
 		team_members: [1],
 		start_date: new Date('21 Feb 2025'),
@@ -456,13 +460,13 @@ export const EVENTS: AdhyaayaEvent[] = [
 		name: 'Born-Psychos',
 		form_link: 'https://forms.gle/kVkF2dsq2mo4x5Ns5',
 		description:
-			'Born Psychos is an adrenaline-fueled event that tests your aptitude skills through exciting rounds and challenges. Hone your critical thinking, leadership, and teamwork abilities while solving riddles and participating in elimination-style games. Join with a team of 4 for 199/-. Embrace your inner psychos and register today for a thrilling experience!',
+			'Born Psychos is an exciting team event for groups of two or four, blending technical knowledge with fun challenges. It features three thrilling rounds: Quiz Master, a BIS-standardized treasure hunt and quiz; Flip-A-Score, a riddle-solving buzzer round followed by a smiley ball fight; and Treasure-Back, a murder mystery where teams race to find the culprit. This event promises intense competition, teamwork, and excitement',
 		amount: [199_00],
 		team_members: [4],
 		start_date: new Date('21 Feb 2025'),
 		end_date: new Date('21 Feb 2025'),
 		small_image: 'https://placeimg.com/360/360/tech',
-		icon: 'ri:treasure-map-line',
+		icon: `url::${born}`,
 		poster: p_bornpsycos,
 		contact: [
 			{
@@ -485,7 +489,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		category: 'non-technical',
 		name: 'Food-O-Holic',
 		description:
-			'"Food-o-Holic" is an exciting competition for teams of 4 members with an entry fee of 299. The competition consists of 3 rounds: "Screaming Baloons," "Meri Foodie Kismat," and "Desert Island." In each round, teams compete in food-related challenges and quizzes, from collecting buns with tied hands to finishing a dessert without using their hands. The winning team is decided by points or speed. Register now for a fun and thrilling culinary adventure.',
+			'"Food-o-Holics" is a fun-filled team event for groups of four featuring exciting food-related challenges. It consists of three thrilling rounds Belly Buster Battle where teams throw a ball into a glass and eat without using their hands Munch and Mastermind a food quiz with penalties and a three-legged race with spice challenges and The Great Dessert Dash where two members must finish 1 kg of shrikhand while the others assist. This event promises a blend of fun teamwork and foodie excitement.',
 		amount: [299_00],
 		team_members: [4],
 		start_date: new Date('20 Feb 2025'),
@@ -514,13 +518,13 @@ export const EVENTS: AdhyaayaEvent[] = [
 		form_link: 'https://forms.gle/VZK8nzmZGQKr3nr59',
 		name: 'Graffiti',
 		description:
-			'Graffiti is an artistic competition that encourages creativity and expression through painting. Participants can choose from four themes—IoT, Social Issue Awareness, Indian Culture and Art, and Limitless Ambitions—to create impactful artwork. The event fosters artistic expression, critical thinking, and storytelling through colors and designs.  Participants will choose one of four themes—IoT, Social Issue Awareness, Indian Culture and Art, or Limitless Ambitions—to create their artwork within the given time. Using any medium, they will express ideas through creativity, originality, and thematic relevance.',
+			'Graffiti is an artistic competition where participants transform ideas into impactful artwork. Choose from four themes: IoT, Social Issue Awareness, Indian Culture & Art, and Limitless Ambitions. Use any medium—acrylic, watercolor, pastels, or sketching tools—to bring your vision to life. Artworks will be displayed in the quadrangle, creating an open-air gallery. Judging criteria include creativity, originality, and thematic representation.',
 		amount: [499_00],
 		team_members: [6],
 		start_date: new Date('20,21 Feb 2025'),
 		end_date: new Date('20,21 Feb 2025'),
 		small_image: 'https://placeimg.com/360/360/tech',
-		icon: `url::${cricbash}`,
+		icon: `url::${graffiti}`,
 		poster: p_graffiti,
 		contact: [
 			{
@@ -543,7 +547,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		name: 'Lounge',
 		form_link: 'https://forms.gle/ZVrwbbdVc3xVW7ii7',
 		description:
-			'Welcome to the "Lounge" session, a collaborative event between ADHYAAYA and the Rotaract Club of GCOEN. We are honored to have two distinguished guests joining us: Mr. Sandip Joshi, former Mayor of Nagpur, and Mr. Vivek Deshpande, Co-founder & Director of Space Wood Furnitures Pvt.Ltd. Get ready for an insightful and engaging session as we delve into the experiences and expertise of these accomplished individuals',
+			'The Lounge is an interactive session where students engage with accomplished Rotarians. Featuring Dr. Shabbire Shakir, the event explores his career journey, challenges, and insights. A student host will lead the discussion, followed by an open mic Q&A, offering valuable real-world advice and inspiration for students’ professional growth.',
 		amount: [0],
 		team_members: [1],
 		start_date: new Date('20 Feb 2025 11:00'),
@@ -572,7 +576,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		name: 'Jigyasa',
 		form_link: 'https://forms.gle/fzd17SxUgWGA7ft78',
 		description:
-			"Are you passionate about serving your country technically? Want to gain insights and knowledge from esteemed personalities of Defence Services/Civil Services? Join Trishakti Cell in collaboration with Adhyaaya for JIGYASA-an exclusive live webinar with SIR LOHIT MATANI (Indian Police Service). Discover, Diagnose and Demestify the ways to achieve your goals through this insightful event. Don't miss out on this opportunity to hear from a seasoned expert in the field! Register now, it's free of cost and open to all!",
+			"Jigyasa 2025 is an insightful workshop on civil services and cybersecurity organized by adhyaaya.gcoen in collaboration with NSS GCoEN. Featuring Indian Police Service experts the event follows a Discover Diagnose and Demystify approach to help participants understand career paths preparation strategies and real-world challenges. With a focus on education and community development Jigyasa fosters social responsibility and leadership making it a valuable opportunity for aspiring professionals.",
 		amount: [0],
 		team_members: [1],
 		start_date: new Date('22 Feb 2025'),
@@ -601,7 +605,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		name: 'Stargaze',
 		form_link: 'https://forms.gle/8kkcKUTibKaqwirk8',
 		description:
-			"Explore the depths of the universe at Adhyaaya'24! Join the Astronomy Club at GCOEN for expert guest lectures, hands-on exploration sessions, and more. Come and STARGAZE with us!",
+			"The Astronomy Club of Government College of Engineering, Nagpur, is organizing 'STARGAZE',an annual workshop conducted during the institution's technical fest, Adhyaaya. The event focuses on the fundamentals of astrophysics and astronomy, featuring expert guest lectures and career guidance in space science. It aims to nurture students' interest in observational astronomy and highlight scientific advancements at national and international levels.",
 		amount: [59_00],
 		team_members: [1],
 		start_date: new Date('21 Feb 2025'),
@@ -631,13 +635,13 @@ export const EVENTS: AdhyaayaEvent[] = [
 		form_link: 'https://forms.gle/PD9oCkb1n6x2TAZJ6',
 		name: 'Bridge-O-Craft',
 		description:
-			"Bridge O’ Craft is a hands-on competition where teams design and build a bridge using only ice-cream sticks and glue. This challenge tests engineering skills, creativity, and teamwork, requiring participants to apply theoretical principles in a practical, innovative way.  ",
+			"Bridge O' Craft is a hands-on competition where teams of five test their engineering skills using only ice-cream sticks and glue. It features three rounds Treasure Hunt where teams solve clues to unlock materials Bridge Construction where they build a structure within given constraints and Load-Bearing Test where bridges are tested for strength and stability. This event encourages creativity teamwork and practical application of engineering principles.",
 		amount: [49_00],
 		team_members: [1],
 		start_date: new Date('21 Feb 2025 11:00'),
 		end_date: new Date('21 Feb 2025'),
 		small_image: 'https://placeimg.com/360/360/tech',
-		icon: `url::${stock}`,
+		icon: `url::${bridge}`,
 		poster: p_bridgeocraft,
 		contact: [
 			{
@@ -660,13 +664,13 @@ export const EVENTS: AdhyaayaEvent[] = [
 		name: 'Hack On',
 		form_link: 'https://gdgc.gcoen.club/hackon',
 		description:
-			'Hack-On is a fast-paced hackathon where teams (2-4 members) develop tech solutions for real-world challenges in Sustainability, Blockchain, Gamified Learning, MedTech, and Smart Automation. Participants must bring their own devices and will +receive mentorship, networking opportunities, and refreshments. Projects will be judged on innovation, feasibility, and impact, with top teams earning recognition, swags, and certificates. ',
+			'Hack on is a fast paced Hackathon for a real world challenge in sustainability it will help you networking with industry experts and fellow Hackers and getting a chance of winning exiting prices and getting Exiting Opportunities, participants must bring their own devices and will be Judged on their respective performances with top team earning recognition,swags and certificates',
 		amount: [0],
 		team_members: [1],
 		start_date: new Date('21 Feb 2025'),
 		end_date: new Date('21 Feb 2025'),
 		small_image: 'https://placeimg.com/360/360/tech',
-		icon: `url::${gdsc}`,
+		icon: `url::${hackon}`,
 		poster: p_gsdc,
 		contact: [
 			{
