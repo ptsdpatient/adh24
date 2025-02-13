@@ -217,7 +217,7 @@ export const EVENTS: AdhyaayaEvent[] = [
 		mode: 'offline',
 		category: 'technical',
 		name: 'Avishkar',
-		form_link: 'https://forms.gle/4tGY6RnxA8vkK9rS6',
+		form_link: 'https://forms.gle/HWumibVd9uo9r5bQA',
 		description:
 			'Avishkar is a project competition for enthusiasts who want to showcase their ideas and show their talent .Teams can have Up to 5 members and project can be in hardware or software categorise .win Exiting prices up to worth 9k for junior greeks and upto 15 k for senior greeks.Register Today itself!!',
 		amount: [159_00, 159_00],
