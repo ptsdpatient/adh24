@@ -57,9 +57,8 @@
 		</div>
 		
 	</div>
-	<div class="flex flex-col items-center justify-center pt-10" >
-		<lite-youtube-embed videoId="DeRLoZuCKfs" />
-		<lite-youtube videoid="DeRLoZuCKfs" playlabel="Adhyaaya'20 Aftermovie" class="w-[80vw] lg:w-[50vw] rounded-lg" />
+	<div class="flex flex-col items-center justify-center pt-10 z-10" >
+		<iframe width="500" height="500" src="https://www.youtube.com/embed/38e0mguWcQ8?si=J132oJFb_h7nwbl-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 	</div>
 
 
