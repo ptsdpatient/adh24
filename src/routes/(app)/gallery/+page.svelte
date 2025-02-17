@@ -14,7 +14,7 @@ let options = {
 </svelte:head>
 
 <!-- zoomwall.js -->
-
+<video src="/events/sample.mp4" autoplay loop muted></video>
 <div style="--bg: url('{bg}');" class="fixed h-screen w-screen -z-50 bg opacity-50"></div>
 
 <div
@@ -23,30 +23,51 @@ let options = {
 	<div class="flex flex-col items-center justify-center pb-28">
 		<h1 class="text-4xl font-bold text-center text-white myfont">Gallery</h1>
 	</div>
-
 	<div class="flex flex-col items-center justify-center pb-12 pt-12">
+		<h1 class="text-2xl font-bold text-center text-white nunu">2024</h1>
+	</div>
+	<Splide {options} aria-label="2024" id="2024">
+		{#each Array.from({length: 8}) as _, i}
+			<SplideSlide>
+			<img src="/gallery/2024/{i}-min.JPG" alt="" class="mx-auto max-h-[50vh] rounded-2xl" />
+		  </SplideSlide>
+		{/each}
+	  </Splide>
+	
+	<div class="flex flex-col items-center justify-center pb-12 pt-12 mt-12 ">
+		<h1 class="text-2xl font-bold text-center text-white nunu">2023</h1>
+	</div>
+	<Splide {options} aria-label="2023" id="2023">
+		{#each Array.from({length: 5}) as _, i}
+			<SplideSlide>
+			<img src="/gallery/2023/{i}-min.JPG" alt="" class="mx-auto max-h-[50vh] rounded-2xl" />
+		  </SplideSlide>
+		{/each}
+	  </Splide>
+
+	<div class="flex flex-col items-center justify-center pb-12 pt-12 mt-12 ">
 		<h1 class="text-2xl font-bold text-center text-white nunu">2022</h1>
 	</div>
 	<Splide {options} aria-label="2022" id="2022">
 		{#each Array.from({length: 5}) as _, i}
 			<SplideSlide>
-			<img src="/gallery/2022/{i}-min.jpg" alt="" class="mx-auto max-h-[50vh]" />
+			<img src="/gallery/2022/{i}-min.jpg" alt="" class="mx-auto max-h-[50vh] rounded-2xl" />
 		  </SplideSlide>
 		{/each}
 	  </Splide>
 
 
-	<div class="flex flex-col items-center justify-center pb-12 pt-12">
+	<div class="flex flex-col items-center justify-center pb-12 pt-12 mt-12 ">
 		<h1 class="text-2xl font-bold text-center text-white nunu">2021</h1>
 	</div>
 	<Splide {options} aria-label="2021" id="2021">
 		{#each Array.from({length: 11}) as _, i}
 			<SplideSlide>
-			<img src="/gallery/2021/{i}.jpeg" alt="" class="mx-auto max-h-[50vh]" />
+			<img src="/gallery/2021/{i}.jpeg" alt="" class="mx-auto max-h-[50vh] rounded-2xl" />
 		  </SplideSlide>
 		{/each}
 	  </Splide>
-	<div class="flex flex-col items-center justify-center pb-12 pt-12">
+	<div class="flex flex-col items-center justify-center pb-12 pt-12 mt-12 ">
 		<h1 class="text-2xl font-bold text-center text-white nunu">2020</h1>
 	</div>
 	<!-- <div class="zoomwall" id="2020">
@@ -66,11 +87,11 @@ let options = {
 	<Splide {options} aria-label="2020" id="2020">
 		{#each Array.from({length: 11}) as _, i}
 			<SplideSlide>
-			<img src="/gallery/2020/{i}.jpg" alt="" class="mx-auto max-h-[50vh]" />
+			<img src="/gallery/2020/{i}.jpg" alt="" class="mx-auto max-h-[50vh] rounded-2xl" />
 		  </SplideSlide>
 		{/each}
 	  </Splide>
-	<div class="flex flex-col items-center justify-center pb-12 pt-12">
+	<div class="flex flex-col items-center justify-center pb-12 pt-12 mt-12 ">
 		<h1 class="text-2xl font-bold text-center text-white nunu">2019</h1>
 	</div>
 	<!-- <div class="zoomwall" id="2019">
@@ -90,12 +111,12 @@ let options = {
 	<Splide {options} aria-label="2019" id="2019">
 		{#each Array.from({length: 11}) as _, i}
 			<SplideSlide>
-			<img src="/gallery/2019/{i}.jpg" alt="" class="mx-auto max-h-[50vh]" />
+			<img src="/gallery/2019/{i}.jpg" alt="" class="mx-auto max-h-[50vh] rounded-2xl" />
 		  </SplideSlide>
 		{/each}
 	  </Splide>
-	<div class="flex flex-col items-center justify-center pb-12 pt-12">
-		<h1 class="text-2xl font-bold text-center text-white nunu">2018</h1>
+	<div class="flex flex-col items-center justify-center pb-12 pt-12 mt-12 ">
+		<h1 class="text-2xl font-bold text-center text-white nunu ">2018</h1>
 	</div>
 	<!-- <div class="zoomwall" id="2018">
 		<img src="/gallery/2018/0.jpg" alt="" />
@@ -114,7 +135,7 @@ let options = {
 	<Splide {options} aria-label="2018" id="2018">
 		{#each Array.from({length: 11}) as _, i}
 			<SplideSlide>
-			<img src="/gallery/2018/{i}.jpg" alt="" class="mx-auto max-h-[50vh]" />
+			<img src="/gallery/2018/{i}.jpg" alt="" class="mx-auto max-h-[50vh] rounded-2xl" />
 		  </SplideSlide>
 		{/each}
 	  </Splide>
@@ -124,7 +145,15 @@ let options = {
 
 <style>
 	/* @import 'zoomwall.js/lib/zoomwall.css'; */
-
+	video{
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		scale: 1.5;
+		filter: blur(4px);
+		object-fit: cover;
+		z-index: -1;
+}
 	.zoomwall {
 		font-size: 0;
 		overflow: hidden;

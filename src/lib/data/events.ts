@@ -61,7 +61,13 @@ import hackon from '$lib/assets/icons/hack-on.png?url'
 import bridge from '$lib/assets/icons/bridge.png?url';
 import piso from '$lib/assets/icons/piso.png?url'
 import code from '$lib/assets/icons/codeventures.png?url';
-import avishkar from '$lib/assets/icons/avishkar.png?url'
+import avishkar from '$lib/assets/icons/avishkar.png?url';
+import standardsumit from '$lib/assets/icons/sumit.png?url';
+import standardhunt from  '$lib/assets/icons/hunt.png?url';
+import cb from '$lib/assets/icons/cb.png?url';
+import admad from '$lib/assets/icons/admad.png?url'
+import bb from '$lib/assets/icons/bb.png?url'
+
 
 // import p_coming_soon from '$lib/assets/posters/coming-soon.png?url';
 import p_avishkar from '$lib/assets/posters/avish.jpg';
@@ -82,6 +88,12 @@ import p_stargaze from '$lib/assets/posters/sg.jpg';
 import p_piso from '$lib/assets/posters/pisosoccer.jpg';
 import p_yuvodaya from '$lib/assets/posters/yuvodaya.jpg';
 import p_lounge from '$lib/assets/posters/theLounge.jpg';
+
+import p_standardhunt from '$lib/assets/posters/standardtunt.jpg'
+import p_standardsumit from '$lib/assets/posters/standardsumit.jpg'
+import p_cb from '$lib/assets/posters/carrerBuilder.jpg'
+import p_admad from '$lib/assets/posters/admad.jpg'
+import p_bb from '$lib/assets/posters/brainbuster.jpg'
 //import p_ie from '$lib/assets/posters/innovationexpress.jpeg';
 //import p_ss from '$lib/assets/posters/structural-spy.jpeg';
 
@@ -685,5 +697,151 @@ export const EVENTS: AdhyaayaEvent[] = [
 		is_active: true,
 		is_open: true,
 		whatsapp_link: 'https://chat.whatsapp.com/BD6gqwlO5FC5qL4I4WEKAy'
-	}
+	},
+	{
+		id: 'standardsumit',
+		mode: 'offline',
+		category: 'technical',
+		name: 'Standard Sumit',
+		form_link: 'https://forms.gle/fXqwP8F7fX9myjdc7',
+		description:
+			'"Standards Summit" is a free-entry presentation competition by GCOE Nagpur and BIS on cybersecurity, EV battery safety, and smart cities. Teams (2-4) present up to 20 slides in 7 minutes, judged on creativity, relevance, research, and presentation skills. Exciting prizes await!',
+		amount: [0],
+		team_members: [2,4],
+		start_date: new Date('21 Feb 2025'),
+		end_date: new Date('21 Feb 2025'),
+		small_image: 'https://placeimg.com/360/360/tech',
+		icon: `url::${standardsumit}`,
+		poster: p_standardsumit,
+		contact: [
+			{
+				name: 'Radha Suple',
+				phone: '9322955398'
+			},
+			{
+				name: 'Niharika Nagpurkar',
+				phone: '8379968904'
+			}
+		],
+		is_active: true,
+		is_open: true,
+		whatsapp_link: ''
+	},
+	{
+		id: 'standardhunt',
+		mode: 'offline',
+		category: 'technical',
+		name: 'Standard Hunt',
+		form_link: 'https://forms.gle/XQaKA8LhKVSZNGVp8',
+		description:
+			'"Standard Hunt" is a fun, clue-based event by GCOE Nagpur and BIS to promote BIS standards. Teams (4-5) solve challenges like decoding standards, product matching, and trivia. The first to complete all checkpoints wins. Free entry with exciting prizes!',
+		amount: [0],
+		team_members: [4,5],
+		start_date: new Date('20 Feb 2025'),
+		end_date: new Date('20 Feb 2025'),
+		small_image: 'https://placeimg.com/360/360/tech',
+		icon: `url::${standardhunt}`,
+		poster: p_standardhunt,
+		contact: [
+			{
+				name: 'Rohit Bhoge',
+				phone: '9156958391'
+			},
+			{
+				name: 'Bharat Pande',
+				phone: '9890779181'
+			}
+		],
+		is_active: true,
+		is_open: true,
+		whatsapp_link: ''
+	},
+	{
+		id: 'cb',
+		mode: 'offline',
+		category: 'technical',
+		name: 'Carrer Builder',
+		form_link: 'https://forms.gle/TfPdqC4KYcpFzSwS8',
+		description:
+			'"Career Builder," presented by BIS x Civil at Government College of Engineering, Nagpur, offers a hands-on construction experience. Participants will set out a 1BHK layout in 4 hours with provided materials. Teams of up to 4 students can enter for free and win exciting prizes. ',
+		amount: [0],
+		team_members: [4],
+		start_date: new Date('21 Feb 2025'),
+		end_date: new Date('21 Feb 2025'),
+		small_image: 'https://placeimg.com/360/360/tech',
+		icon: `url::${cb}`,
+		poster: p_cb,
+		contact: [
+			{
+				name: 'Roshan Piprewar',
+				phone: '7028382550'
+			},
+			{
+				name: 'Om Lokhande',
+				phone: '7720012113'
+			}
+		],
+		is_active: true,
+		is_open: true,
+		whatsapp_link: ''
+	},
+	{
+		id: 'admad',
+		mode: 'offline',
+		category: 'technical',
+		name: 'Ad - Mad',
+		form_link: 'https://forms.gle/GrwxgVAGXR3kRLb69',
+		description:
+			'"AD-MAD" is a creative ad-making competition by GCOE Nagpur and BIS, focusing on BIS-specific, social awareness, comedy, and innovative ideas. Free entry with prizes up to ₹3000. Showcase your creativity through advertisements',
+		amount: [0],
+		team_members: [1],
+		start_date: new Date('21 Feb 2025'),
+		end_date: new Date('21 Feb 2025'),
+		small_image: 'https://placeimg.com/360/360/tech',
+		icon: `url::${admad}`,
+		poster: p_admad,
+		contact: [
+			{
+				name: 'Aditya Suryavanshi',
+				phone: '9921082180'
+			},
+			{
+				name: 'Pranay Kadu',
+				phone: '7620943177'
+			}
+		],
+		is_active: true,
+		is_open: true,
+		whatsapp_link: ''
+	},
+	{
+		id: 'bb',
+		mode: 'offline',
+		category: 'technical',
+		name: 'Brain Busters',
+		form_link: 'https://forms.gle/EErLtk9u359fmGKB9',
+		description:
+			'The "Brain Busters" tech quiz at Government College of Engineering, Nagpur, tests knowledge of BIS standards and technical concepts. It features three rounds: The Standard Pen, Fact vs. Fiction, and Standards Sprints.',
+		amount: [0],
+		team_members: [1],
+		start_date: new Date('21 Feb 2025'),
+		end_date: new Date('21 Feb 2025'),
+		small_image: 'https://placeimg.com/360/360/tech',
+		icon: `url::${bb}`,
+		poster: p_bb,
+		contact: [
+			{
+				name: 'Zoya Salahuddin',
+				phone: '7387630037'
+			},
+			{
+				name: 'Yash Talmale',
+				phone: '9356626905'
+			}
+		],
+		is_active: true,
+		is_open: true,
+		whatsapp_link: ''
+	},
+	
 ];

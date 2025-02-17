@@ -353,9 +353,74 @@ font-weight: bold;
 </div>
 </div>
 </button>
+<button
+  on:click={async () => {
+    const event = getEventByName('Standard Sumit');
+    if (event) {
+      await goto(`/events?view=${event.id}`);
+      openModal(EventInfoModal, { event });
+    }
+  }}><div class="maincontainer">
+<div class="thecard">
+<div class="thefront">
+  <img src="/events/icons/sumit.png" alt="" style="height: 175px; margin-top: 15px; margin-bottom: 15px; ">
+  <h1>Standard Sumit</h1>
+</div>
 
+</div>
+</div>
+</button><button
+on:click={async () => {
+  const event = getEventByName('Ad - Mad');
+  if (event) {
+    await goto(`/events?view=${event.id}`);
+    openModal(EventInfoModal, { event });
+  }
+}}><div class="maincontainer">
+<div class="thecard">
+<div class="thefront">
+<img src="/events/icons/admad.png" alt="" style="height: 175px; margin-top: 15px; margin-bottom: 15px; ">
+<h1>Ad-Mad</h1>
+</div>
 
+</div>
+</div>
+</button>
 
+<button
+  on:click={async () => {
+    const event = getEventByName('Brain Busters');
+    if (event) {
+      await goto(`/events?view=${event.id}`);
+      openModal(EventInfoModal, { event });
+    }
+  }}><div class="maincontainer">
+<div class="thecard">
+<div class="thefront">
+  <img src="/events/icons/bb.png" alt="" style="height: 175px; margin-top: 15px; margin-bottom: 15px; ">
+  <h1>Brain Busters</h1>
+</div>
+
+</div>
+</div>
+</button>
+<button
+  on:click={async () => {
+    const event = getEventByName('Standard Hunt');
+    if (event) {
+      await goto(`/events?view=${event.id}`);
+      openModal(EventInfoModal, { event });
+    }
+  }}><div class="maincontainer">
+<div class="thecard">
+<div class="thefront">
+  <img src="/events/icons/hunt.png" alt="" style="height: 175px; margin-top: 15px; margin-bottom: 15px; ">
+  <h1>Standard Hunt</h1>
+</div>
+
+</div>
+</div>
+</button>
   </section>
   <section class="tech-event tech-part1">
 
@@ -410,6 +475,24 @@ font-weight: bold;
   </div>
   </div>
 </button>
+<button
+  on:click={async () => {
+    const event = getEventByName('Carrer Builder');
+    if (event) {
+      await goto(`/events?view=${event.id}`);
+      openModal(EventInfoModal, { event });
+    }
+  }}><div class="maincontainer">
+<div class="thecard">
+<div class="thefront">
+  <img src="/events/icons/cb.png" alt="" style="height: 175px; margin-top: 15px; margin-bottom: 15px; ">
+  <h1>Carrer Builder</h1>
+</div>
+
+</div>
+</div>
+</button>
+
       </section>
     </section>
 
