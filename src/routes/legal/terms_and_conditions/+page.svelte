@@ -1,5 +1,5 @@
 <svelte:head>
-	<title>Terms and Conditions | Adhyaaya'24</title>
+	<title>Terms and Conditions | Adhyaaya'25</title>
 </svelte:head>
 <video src="/events/sample.mp4" autoplay loop muted class="blur-sm"></video>
 <!-- 

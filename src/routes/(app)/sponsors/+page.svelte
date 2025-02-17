@@ -17,7 +17,7 @@
 </script>
 
 <svelte:head>
-	<title>Our Sponsors | Adhyaaya'24</title>
+	<title>Our Sponsors | Adhyaaya'25</title>
 </svelte:head>
 
 <div

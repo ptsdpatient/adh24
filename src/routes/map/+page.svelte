@@ -11,7 +11,8 @@
   });
 
   import Hmap from '$lib/assets/map.png?url';
-  import Vmap from '$lib/assets/map.png?url'
+  import Vmap from '$lib/assets/map.png?url';
+  document.title="Adhyaaya'25";
 </script>
 
 

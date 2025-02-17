@@ -24,7 +24,7 @@
 </script>
 
 <svelte:head>
-	<title>Receipt for {EVENT?.name} | Adhyaaya'24</title>
+	<title>Receipt for {EVENT?.name} | Adhyaaya'25</title>
 </svelte:head>
 
 <div class="md:h-screen w-screen md:w-screen no-scroll-bar">

@@ -56,7 +56,7 @@
 <svelte:head>
 	<script src="/rzp/checkout.js"></script>
 	<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-	<title>Payment Gateway | Adhyaaya'24</title>
+	<title>Payment Gateway | Adhyaaya'25</title>
 </svelte:head>
 
 <div class="h-full-w-full flex items-center justify-center">

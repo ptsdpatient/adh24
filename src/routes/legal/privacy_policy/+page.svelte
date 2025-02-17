@@ -1,7 +1,7 @@
 <script>
   import mp4Video from "/src/routes/events/sample.mp4"; // Correct path!
 </script><svelte:head>
-	<title>Privacy Policy | Adhyaaya'24</title>
+	<title>Privacy Policy | Adhyaaya'25</title>
 </svelte:head>
 <video src={mp4Video} autoplay loop muted class="blur-sm"></video>
 

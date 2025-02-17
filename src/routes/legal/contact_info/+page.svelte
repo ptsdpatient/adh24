@@ -4,7 +4,7 @@
 <video src="/events/sample.mp4" autoplay loop muted class="blur-sm"></video>
 
 `<svelte:head>
-	<title>Contact Info | Adhyaaya'24</title>
+	<title>Contact Info | Adhyaaya'25</title>
 </svelte:head>
 
 
